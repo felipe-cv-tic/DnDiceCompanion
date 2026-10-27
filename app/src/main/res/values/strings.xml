@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">DnDiceCompanion</string>
+    <string name="user">USUARI</string>
+    <string name="pwd">CONTRASENYA</string>
+    <string name="noLogIn">Continuar sense iniciar sessió</string>
+    <string name="log">LOG IN</string>
+    <string name="reg">REGISTER</string>
+    <string name="pref">Preferencies</string>
+    <string name="accesi">Accessibilitat</string>
+    <string name="talkback">Talk back</string>
+    <string name="contrast">High contrast</string>
+    <string name="propietat_1">Propietat 1</string>
+    <string name="propietat_2">Propietat 2</string>
+    <string name="propietat_3">Propietat 3</string>
+    <string name="propietat_4">Propietat 4</string>
+    <string name="propietat_5">Propietat 5</string>
+    <string name="propietat_6">Propietat 6</string>
 </resources>
