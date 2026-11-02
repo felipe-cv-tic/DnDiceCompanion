@@ -15,4 +15,15 @@
     <string name="propietat_4">Propietat 4</string>
     <string name="propietat_5">Propietat 5</string>
     <string name="propietat_6">Propietat 6</string>
+
+    <!-- Dice companion strings -->
+    <string name="roll_dice_title">Tira un dau!</string>
+    <string name="dice_result_placeholder">Resultat del dau</string>
+    <string name="dice_image_desc">Imatge del dau</string>
+    <string name="d4">d4</string>
+    <string name="d6">d6</string>
+    <string name="d8">d8</string>
+    <string name="d10">d10</string>
+    <string name="d12">d12</string>
+    <string name="d20">d20</string>
 </resources>
