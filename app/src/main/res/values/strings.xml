@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">DnDiceCompanion</string>
+
+    <!-- Opciones D&D 2024 para los desplegables -->
+    <string-array name="classes_array">
+        <item>Guerrero</item>
+        <item>Mago</item>
+        <item>Pícaro</item>
+        <item>Clérigo</item>
+        <item>Bárbaro</item>
+        <item>Bardo</item>
+        <item>Brujo</item>
+        <item>Druida</item>
+        <item>Explorador</item>
+        <item>Hechicero</item>
+        <item>Monje</item>
+        <item>Paladín</item>
+    </string-array>
+
+    <string-array name="races_array">
+        <item>Humano</item>
+        <item>Elfo</item>
+        <item>Enano</item>
+        <item>Mediano</item>
+        <item>Dracónido</item>
+        <item>Gnomo</item>
+        <item>Goliat</item>
+        <item>Orco</item>
+        <item>Tiflin</item>
+        <item>Aasimar</item>
+    </string-array>
+
+    <string-array name="subclasses_array">
+        <item>Sin subclase</item>
+        <item>Campeón</item>
+        <item>Maestro de batalla</item>
+        <item>Evocación</item>
+        <item>Adivinación</item>
+        <item>Ladrón</item>
+        <item>Asesino</item>
+        <item>Dominio de la Vida</item>
+        <item>Bersérker</item>
+        <item>Círculo de la Luna</item>
+        <item>Cazador</item>
+        <item>Devoción</item>
+    </string-array>
 </resources>
