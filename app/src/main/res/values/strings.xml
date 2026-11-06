@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">DnDiceCompanion</string>
 
+    <!-- ===== Cambios de developLluc ===== -->
+
     <!-- Títulos y etiquetas de fragment_character -->
     <string name="title_level">Nivel</string>
     <string name="title_class">Clase</string>
@@ -67,4 +69,62 @@
         <item>Cazador</item>
         <item>Devoción</item>
     </string-array>
+
+    <!-- ===== Cambios de master ===== -->
+
+    <string name="user">USUARI</string>
+    <string name="pwd">CONTRASENYA</string>
+    <string name="noLogIn">Continuar sense iniciar sessió</string>
+    <string name="log">LOG IN</string>
+    <string name="reg">REGISTER</string>
+    <string name="pref">Preferencies</string>
+    <string name="accesi">Accessibilitat</string>
+    <string name="talkback">Talk back</string>
+    <string name="contrast">High contrast</string>
+    <string name="propietat_1">Propietat 1</string>
+    <string name="propietat_2">Propietat 2</string>
+    <string name="propietat_3">Propietat 3</string>
+    <string name="propietat_4">Propietat 4</string>
+    <string name="propietat_5">Propietat 5</string>
+    <string name="propietat_6">Propietat 6</string>
+
+    <string name="roll_dice_title">Tira un dau!</string>
+    <string name="dice_result_placeholder">Resultat del dau</string>
+    <string name="dice_image_desc">Imatge del dau</string>
+    <string name="d4">d4</string>
+    <string name="d6">d6</string>
+    <string name="d8">d8</string>
+    <string name="d10">d10</string>
+    <string name="d12">d12</string>
+    <string name="d20">d20</string>
+
+    <string name="title_magies_habilitats">Màgies / Habilitats</string>
+    <string name="hint_nom">Nom</string>
+    <string name="hint_estadistiques">Estadístiques</string>
+    <string name="add_magic_desc">Afegir màgia o habilitat</string>
+    <string name="magic_image_desc">Imatge de la màgia o habilitat</string>
+
+    <string name="title_armes_escuts_armadures">Armes, Escuts i Armadures</string>
+    <string name="add_arma_desc">Afegir arma, escut o armadura</string>
+    <string name="arma_image_desc">Imatge de l\'arma, escut o armadura</string>
+
+    <string name="hint_nivell_escola">Nivell / Escola</string>
+    <string name="hint_temps_llancament">Temps de llançament</string>
+    <string name="hint_abast">Abast</string>
+    <string name="hint_durada">Durada</string>
+    <string name="hint_components">Components</string>
+    <string name="hint_descripcio">Descripció</string>
+    <string name="hint_tipus">Tipus</string>
+    <string name="hint_propietats">Propietats</string>
+    <string name="hint_mestratge">Mestratge</string>
+    <string name="hint_pes">Pes</string>
+    <string name="hint_preu">Preu</string>
+    <string name="expand_desc">Desplegar més detalls</string>
+
+    <string name="email">CORREU ELECTRÒNIC</string>
+    <string name="confirm_pwd">CONFIRMAR CONTRASENYA</string>
+    <string name="phone">TELÈFON</string>
+
+    <string name="search_hint_magies">Cercar màgia o habilitat&#8230;</string>
+    <string name="search_hint_armes">Cercar arma, escut o armadura&#8230;</string>
 </resources>
