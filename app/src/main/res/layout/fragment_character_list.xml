@@ -43,6 +43,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="15dp"
+                        android:contentDescription="@null"
                         android:scaleType="centerCrop"
                         tools:background="#33FFFFFF" />
 
@@ -97,6 +98,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="15dp"
+                        android:contentDescription="@null"
                         android:scaleType="centerCrop"
                         tools:background="#33FFFFFF" />
 
@@ -134,6 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:contentDescription="@null"
         android:src="@drawable/add_simbol"
 
         app:layout_constraintEnd_toEndOf="parent"
