@@ -1,76 +1,70 @@
 <resources>
     <string name="app_name">DnDiceCompanion</string>
 
-    <!-- ===== Cambios de developLluc ===== -->
-
-    <!-- Títulos y etiquetas de fragment_character -->
-    <string name="title_level">Nivel</string>
-    <string name="title_class">Clase</string>
-    <string name="title_race">Raza</string>
-    <string name="title_subclass">Subclase</string>
-    <string name="title_proficiency_bonus">Bonificador por\ncompetencia</string>
-    <string name="title_strength">Fuerza</string>
-    <string name="title_dexterity">Destreza</string>
-    <string name="title_constitution">Constitución</string>
-    <string name="title_intelligence">Inteligencia</string>
-    <string name="title_wisdom">Sabiduría</string>
+    <string name="title_level">Nivell</string>
+    <string name="title_class">Classe</string>
+    <string name="title_race">Raça</string>
+    <string name="title_subclass">Subclasse</string>
+    <string name="title_proficiency_bonus">Bonificador per\ncompetència</string>
+    <string name="title_strength">Força</string>
+    <string name="title_dexterity">Destresa</string>
+    <string name="title_constitution">Constitució</string>
+    <string name="title_intelligence">Intel·ligència</string>
+    <string name="title_wisdom">Saviesa</string>
     <string name="title_charisma">Carisma</string>
     <string name="title_current_hp">Vida actual</string>
-    <string name="title_armor_class">Clase de armadura</string>
-    <string name="title_speed">Velocidad</string>
+    <string name="title_armor_class">Classe d\'armadura</string>
+    <string name="title_speed">Velocitat</string>
     <string name="title_initiative">Iniciativa</string>
-    <string name="title_inventory">Inventario</string>
-    <string name="title_proficiencies">Competencias</string>
-    <string name="title_spellcasting_ability">Aptitud mágica</string>
-    <string name="title_spell_modifier">Modificador de lanzamiento</string>
-    <string name="title_spell_save_dc">CD salvación de conjuro</string>
-    <string name="title_spell_attack_bonus">Bonus ataque de conjuro</string>
+    <string name="title_inventory">Inventari</string>
+    <string name="title_proficiencies">Competències</string>
+    <string name="title_spellcasting_ability">Aptitud màgica</string>
+    <string name="title_spell_modifier">Modificador de llançament</string>
+    <string name="title_spell_save_dc">CD salvació de conjur</string>
+    <string name="title_spell_attack_bonus">Bonus atac de conjur</string>
 
-    <!-- Opciones D&D 2024 para los desplegables -->
     <string-array name="classes_array">
-        <item>Guerrero</item>
-        <item>Mago</item>
-        <item>Pícaro</item>
-        <item>Clérigo</item>
-        <item>Bárbaro</item>
-        <item>Bardo</item>
-        <item>Brujo</item>
+        <item>Guerrer</item>
+        <item>Mag</item>
+        <item>Pícar</item>
+        <item>Clèric</item>
+        <item>Bàrbar</item>
+        <item>Bard</item>
+        <item>Bruixot</item>
         <item>Druida</item>
         <item>Explorador</item>
         <item>Hechicero</item>
-        <item>Monje</item>
-        <item>Paladín</item>
+        <item>Monjo</item>
+        <item>Paladí</item>
     </string-array>
 
     <string-array name="races_array">
-        <item>Humano</item>
-        <item>Elfo</item>
-        <item>Enano</item>
-        <item>Mediano</item>
-        <item>Dracónido</item>
-        <item>Gnomo</item>
+        <item>Humà</item>
+        <item>Elf</item>
+        <item>Nan</item>
+        <item>Mitjà</item>
+        <item>Dracònic</item>
+        <item>Gnom</item>
         <item>Goliat</item>
-        <item>Orco</item>
+        <item>Orc</item>
         <item>Tiflin</item>
         <item>Aasimar</item>
     </string-array>
 
     <string-array name="subclasses_array">
-        <item>Sin subclase</item>
-        <item>Campeón</item>
-        <item>Maestro de batalla</item>
-        <item>Evocación</item>
-        <item>Adivinación</item>
-        <item>Ladrón</item>
-        <item>Asesino</item>
-        <item>Dominio de la Vida</item>
-        <item>Bersérker</item>
-        <item>Círculo de la Luna</item>
-        <item>Cazador</item>
-        <item>Devoción</item>
+        <item>Sense subclasse</item>
+        <item>Campió</item>
+        <item>Mestre de batalla</item>
+        <item>Evocació</item>
+        <item>Endevinació</item>
+        <item>Lladre</item>
+        <item>Assassin</item>
+        <item>Domini de la Vida</item>
+        <item>Bersèrker</item>
+        <item>Cercle de la Lluna</item>
+        <item>Caçador</item>
+        <item>Devoció</item>
     </string-array>
-
-    <!-- ===== Cambios de master ===== -->
 
     <string name="user">USUARI</string>
     <string name="pwd">CONTRASENYA</string>
@@ -127,4 +121,27 @@
 
     <string name="search_hint_magies">Cercar màgia o habilitat&#8230;</string>
     <string name="search_hint_armes">Cercar arma, escut o armadura&#8230;</string>
+    <string name="search_icon_desc">Icona de cerca</string>
+    <string name="btn_login_desc">Iniciar sessió</string>
+    <string name="btn_register_desc">Registrar-se</string>
+    <string name="btn_no_login_desc">Continuar sense iniciar sessió</string>
+
+    <string name="hint_character_name">Nom del Personatge</string>
+    <string name="hint_add_proficiency">Afegir competència&#8230;</string>
+    <string name="hint_add_item">Afegir objecte&#8230;</string>
+    <string name="prof_light_medium_armor">Armadures lleugeres i mitjanes</string>
+    <string name="prof_martial_simple_weapons">Armes marcials i simples</string>
+    <string name="prof_thieves_tools">Eines de lladre</string>
+    <string name="inv_explorer_pack">Mochila d\'explorador</string>
+    <string name="inv_healing_potion">Poció de curació</string>
+    <string name="inv_rations">Racions (5 dies)</string>
+    <string name="add_character_desc">Afegir personatge</string>
+    <string name="nav_character">Personatges</string>
+    <string name="nav_dice">Daus</string>
+    <string name="nav_spells">Màgies</string>
+    <string name="nav_weapons">Armes</string>
+    <string name="char_iniesta">Andrés Iniesta</string>
+    <string name="char_messi">Lionel Messi</string>
+    <string name="class_mago_evocacion">Mag (Evocació)</string>
+    <string name="class_picaro_ladron">Pícar (Lladre)</string>
 </resources>

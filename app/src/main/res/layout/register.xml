@@ -4,6 +4,7 @@
     android:id="@+id/scroll_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroud"
     android:fillViewport="true">
 
     <LinearLayout
@@ -12,29 +13,35 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="24dp">
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/lbl_usuari"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textStyle="bold"
+            android:textColor="@color/colorText"
             android:layout_marginBottom="4dp"
+            android:labelFor="@+id/et_usuari"
             android:text="@string/user" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_usuari"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="12dp"
+            android:hint="@string/user"
+            android:textColorHint="@color/textSecundari"
+            app:hintTextColor="@color/colorText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_usuari"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:textSize="16sp" />
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -42,23 +49,29 @@
             android:id="@+id/lbl_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textStyle="bold"
+            android:textColor="@color/colorText"
             android:layout_marginBottom="4dp"
+            android:labelFor="@+id/et_email"
             android:text="@string/email" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="12dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/textSecundari"
+            app:hintTextColor="@color/colorText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textSize="16sp" />
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -66,23 +79,29 @@
             android:id="@+id/lbl_telefon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textStyle="bold"
+            android:textColor="@color/colorText"
             android:layout_marginBottom="4dp"
+            android:labelFor="@+id/et_telefon"
             android:text="@string/phone" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_telefon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="12dp"
+            android:hint="@string/phone"
+            android:textColorHint="@color/textSecundari"
+            app:hintTextColor="@color/colorText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_telefon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
-                android:textSize="16sp" />
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,24 +109,31 @@
             android:id="@+id/lbl_contrasenya"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textStyle="bold"
+            android:textColor="@color/colorText"
             android:layout_marginBottom="4dp"
+            android:labelFor="@+id/et_contrasenya"
             android:text="@string/pwd" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_contrasenya"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:passwordToggleEnabled="true">
+            android:layout_marginBottom="12dp"
+            android:hint="@string/pwd"
+            android:textColorHint="@color/textSecundari"
+            app:hintTextColor="@color/colorText"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_contrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textSize="16sp" />
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,24 +141,31 @@
             android:id="@+id/lbl_confirmar_contrasenya"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textStyle="bold"
+            android:textColor="@color/colorText"
             android:layout_marginBottom="4dp"
+            android:labelFor="@+id/et_confirmar_contrasenya"
             android:text="@string/confirm_pwd" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_confirmar_contrasenya"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            app:passwordToggleEnabled="true">
+            android:layout_marginBottom="16dp"
+            android:hint="@string/confirm_pwd"
+            android:textColorHint="@color/textSecundari"
+            app:hintTextColor="@color/colorText"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_confirmar_contrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textSize="16sp" />
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -142,16 +175,19 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="12dp"
             style="?android:attr/buttonBarStyle">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_entrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:text="@string/log"
+                android:textColor="@color/colorText"
+                android:contentDescription="@string/btn_login_desc"
+                app:backgroundTint="@color/buttonColor"
                 app:cornerRadius="20dp"
                 style="?android:attr/buttonBarButtonStyle"/>
 
@@ -159,9 +195,12 @@
                 android:id="@+id/btn_registre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:text="@string/reg"
+                android:textColor="@color/colorText"
+                android:contentDescription="@string/btn_register_desc"
+                app:backgroundTint="@color/buttonColor"
                 app:cornerRadius="20dp"
                 style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
@@ -170,16 +209,18 @@
             android:id="@+id/noLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:text="@string/noLogIn"
+            android:textColor="@color/textSecundari"
+            android:contentDescription="@string/btn_no_login_desc"
             android:clickable="true"
             android:focusable="true"
             android:minHeight="48dp"
             android:gravity="center"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginBottom="24dp" />
 
         <LinearLayout
             android:id="@+id/layout_preferencies"
@@ -193,23 +234,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/pref"
-                android:padding="12dp"
+                android:padding="10dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
+                app:backgroundTint="@color/cardBackground"
                 app:icon="@drawable/settings"
                 app:iconGravity="textStart"
                 app:iconPadding="0dp"
-                app:cornerRadius="24dp" />
+                app:cornerRadius="20dp" />
 
             <TextView
                 android:id="@+id/lbl_preferencies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:textColor="@color/textSecundari"
                 android:text="@string/pref" />
         </LinearLayout>
 

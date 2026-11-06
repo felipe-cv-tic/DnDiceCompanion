@@ -3,11 +3,50 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorText">#E5E7EB</color>
-    <color name="backgroud">#0B0B0F</color>
-    <color name="background">#F5F5F5</color>
-    <color name="cardBackground">#1A1A24</color>
+    <color name="fons_clar">#F4EAD5</color>
+    <color name="superficie_clar">#FBF5E6</color>
+    <color name="text_principal_clar">#2B1D14</color>
+    <color name="text_secundari_clar">#5C4A3A</color>
+    <color name="primari_roig_drac_clar">#8B1E2D</color>
+    <color name="secundari_or_clar">#B8862B</color>
+    <color name="accent_arca_clar">#5B3A8C</color>
+    <color name="exit_vida_clar">#3E6B3A</color>
+    <color name="advertencia_clar">#B5651D</color>
+    <color name="error_dany_clar">#B3261E</color>
+    <color name="vora_clar">#CDB894</color>
 
-    <color name="buttonColor">#0825FF</color>
-    <color name="buttonSelectedColoR">#000A5B</color>
+    <color name="fons_fosc">#14100E</color>
+    <color name="superficie_fosca">#211A17</color>
+    <color name="superficie_elevada_fosca">#2D2420</color>
+    <color name="text_principal_fosc">#FFFFFF</color>
+    <color name="text_secundari_fosc">#E0E0E0</color>
+    <color name="primari_roig_brasa_fosc">#E4575B</color>
+    <color name="secundari_or_fosc">#E3B04B</color>
+    <color name="accent_arca_fosc">#A98BE0</color>
+    <color name="exit_vida_fosc">#7FB77A</color>
+    <color name="advertencia_fosca">#E89A4F</color>
+    <color name="error_dany_fosc">#FF6B6B</color>
+    <color name="vora_fosca">#4A3C34</color>
+
+    <color name="fons_alt_contrast">#000000</color>
+    <color name="superficie_alt_contrast">#0D0D0D</color>
+    <color name="text_principal_alt_contrast">#FFFFFF</color>
+    <color name="text_secundari_alt_contrast">#E0E0E0</color>
+    <color name="primari_roig_alt_contrast">#FF6B6B</color>
+    <color name="secundari_or_alt_contrast">#FFD54A</color>
+    <color name="accent_arca_alt_contrast">#C9B3FF</color>
+    <color name="exit_vida_alt_contrast">#6BFF8A</color>
+    <color name="advertencia_alt_contrast">#FFA040</color>
+    <color name="error_dany_alt_contrast">#FF8080</color>
+    <color name="vora_alt_contrast">#FFFFFF</color>
+    <color name="foc_outline_alt_contrast">#00E5FF</color>
+
+    <color name="backgroud">#14100E</color>
+    <color name="background">#14100E</color>
+    <color name="cardBackground">#2D2420</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="textSecundari">#E0E0E0</color>
+    <color name="buttonColor">#E4575B</color>
+    <color name="buttonSelectedColoR">#E3B04B</color>
+    <color name="vora">#4A3C34</color>
 </resources>

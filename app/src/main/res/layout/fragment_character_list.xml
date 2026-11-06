@@ -43,7 +43,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="15dp"
-                        android:contentDescription="@null"
+                        android:contentDescription="@string/char_iniesta"
                         android:scaleType="centerCrop"
                         tools:background="#33FFFFFF" />
 
@@ -57,7 +57,7 @@
                             android:id="@+id/NameCharacterExemple"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Andrés Iniesta"
+                            android:text="@string/char_iniesta"
                             android:textColor="@color/colorText"
                             android:textSize="22sp"
                             android:textStyle="bold" />
@@ -66,7 +66,7 @@
                             android:id="@+id/ClassCharacterExemple"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Mago (Evocación)"
+                            android:text="@string/class_mago_evocacion"
                             android:textColor="@color/colorText"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -98,7 +98,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="15dp"
-                        android:contentDescription="@null"
+                        android:contentDescription="@string/char_messi"
                         android:scaleType="centerCrop"
                         tools:background="#33FFFFFF" />
 
@@ -112,7 +112,7 @@
                             android:id="@+id/NameCharacterExemple2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lionel Messi"
+                            android:text="@string/char_messi"
                             android:textColor="@color/colorText"
                             android:textSize="22sp"
                             android:textStyle="bold" />
@@ -121,7 +121,7 @@
                             android:id="@+id/ClassCharacterExemple2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Pícaro (Ladrón)"
+                            android:text="@string/class_picaro_ladron"
                             android:textColor="@color/colorText"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -136,9 +136,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:contentDescription="@null"
+        android:contentDescription="@string/add_character_desc"
         android:src="@drawable/add_simbol"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:backgroundTint="@color/buttonColor"/>

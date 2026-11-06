@@ -82,13 +82,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
-                                    android:hint="@string/hint_nom">
+                                    android:hint="@string/hint_nom"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_nom_arma_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         android:inputType="textCapWords"
                                         tools:text="Espasa Llarga" />
 
@@ -99,13 +102,16 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:hint="@string/hint_estadistiques">
+                                    android:hint="@string/hint_estadistiques"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_stats_arma_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         android:inputType="text"
                                         tools:text="1d8 tall" />
 
@@ -147,13 +153,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
-                                    android:hint="@string/hint_tipus">
+                                    android:hint="@string/hint_tipus"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_tipus_arma_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         tools:text="Arma cos a cos marcial" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -163,13 +172,16 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:hint="@string/hint_propietats">
+                                    android:hint="@string/hint_propietats"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_propietats_arma_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         tools:text="Versàtil (1d10)" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -181,13 +193,16 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
-                                android:hint="@string/hint_mestratge">
+                                android:hint="@string/hint_mestratge"
+                                android:textColorHint="@color/textSecundari"
+                                app:hintTextColor="@color/colorText">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_mestratge_arma_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textSize="14sp"
+                                    android:textColor="@color/colorText"
                                     tools:text="Eslat (Topple)" />
 
                             </com.google.android.material.textfield.TextInputLayout>
@@ -205,13 +220,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
-                                    android:hint="@string/hint_pes">
+                                    android:hint="@string/hint_pes"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_pes_arma_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         tools:text="3 lb." />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -221,13 +239,16 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:hint="@string/hint_preu">
+                                    android:hint="@string/hint_preu"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_preu_arma_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         tools:text="15 po" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -238,13 +259,16 @@
                                 android:id="@+id/til_desc_arma_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="@string/hint_descripcio">
+                                android:hint="@string/hint_descripcio"
+                                android:textColorHint="@color/textSecundari"
+                                app:hintTextColor="@color/colorText">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_desc_arma_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textSize="14sp"
+                                    android:textColor="@color/colorText"
                                     android:inputType="textMultiLine"
                                     android:minLines="2"
                                     tools:text="Una espasa de doble tall d'acer de gran qualitat, equilibrada per a combat amb una o dues mans." />
@@ -302,13 +326,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
-                                    android:hint="@string/hint_nom">
+                                    android:hint="@string/hint_nom"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_nom_arma_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         android:inputType="textCapWords"
                                         tools:text="Escut de Fusta" />
 
@@ -319,13 +346,16 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:hint="@string/hint_estadistiques">
+                                    android:hint="@string/hint_estadistiques"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_stats_arma_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
+                                        android:textColor="@color/colorText"
                                         android:inputType="text"
                                         tools:text="+2 CA" />
 
@@ -367,13 +397,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
-                                    android:hint="@string/hint_tipus">
+                                    android:hint="@string/hint_tipus"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_tipus_arma_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:textSize="14sp" />
+                                        android:textSize="14sp"
+                                        android:textColor="@color/colorText" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -382,13 +415,16 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:hint="@string/hint_propietats">
+                                    android:hint="@string/hint_propietats"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_propietats_arma_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:textSize="14sp" />
+                                        android:textSize="14sp"
+                                        android:textColor="@color/colorText" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -399,13 +435,16 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
-                                android:hint="@string/hint_mestratge">
+                                android:hint="@string/hint_mestratge"
+                                android:textColorHint="@color/textSecundari"
+                                app:hintTextColor="@color/colorText">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_mestratge_arma_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:textSize="14sp" />
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorText" />
 
                             </com.google.android.material.textfield.TextInputLayout>
 
@@ -422,13 +461,16 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
-                                    android:hint="@string/hint_pes">
+                                    android:hint="@string/hint_pes"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_pes_arma_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:textSize="14sp" />
+                                        android:textSize="14sp"
+                                        android:textColor="@color/colorText" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -437,13 +479,16 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:hint="@string/hint_preu">
+                                    android:hint="@string/hint_preu"
+                                    android:textColorHint="@color/textSecundari"
+                                    app:hintTextColor="@color/colorText">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_preu_arma_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:textSize="14sp" />
+                                        android:textSize="14sp"
+                                        android:textColor="@color/colorText" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -453,13 +498,16 @@
                                 android:id="@+id/til_desc_arma_2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="@string/hint_descripcio">
+                                android:hint="@string/hint_descripcio"
+                                android:textColorHint="@color/textSecundari"
+                                app:hintTextColor="@color/colorText">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                                <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_desc_arma_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textSize="14sp"
+                                    android:textColor="@color/colorText"
                                     android:inputType="textMultiLine"
                                     android:minLines="2" />
 
@@ -494,13 +542,17 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="12dp"
         android:hint="@string/search_hint_armes"
-        app:startIconDrawable="@android:drawable/ic_menu_search">
+        android:textColorHint="@color/textSecundari"
+        app:hintTextColor="@color/colorText"
+        app:startIconDrawable="@android:drawable/ic_menu_search"
+        app:startIconTint="@color/colorText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_search_armes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
+            android:textColor="@color/colorText"
             android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
