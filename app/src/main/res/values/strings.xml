@@ -1,5 +1,77 @@
 <resources>
     <string name="app_name">DnDiceCompanion</string>
+
+    <!-- ===== Cambios de developLluc ===== -->
+
+    <!-- Títulos y etiquetas de fragment_character -->
+    <string name="title_level">Nivel</string>
+    <string name="title_class">Clase</string>
+    <string name="title_race">Raza</string>
+    <string name="title_subclass">Subclase</string>
+    <string name="title_proficiency_bonus">Bonificador por\ncompetencia</string>
+    <string name="title_strength">Fuerza</string>
+    <string name="title_dexterity">Destreza</string>
+    <string name="title_constitution">Constitución</string>
+    <string name="title_intelligence">Inteligencia</string>
+    <string name="title_wisdom">Sabiduría</string>
+    <string name="title_charisma">Carisma</string>
+    <string name="title_current_hp">Vida actual</string>
+    <string name="title_armor_class">Clase de armadura</string>
+    <string name="title_speed">Velocidad</string>
+    <string name="title_initiative">Iniciativa</string>
+    <string name="title_inventory">Inventario</string>
+    <string name="title_proficiencies">Competencias</string>
+    <string name="title_spellcasting_ability">Aptitud mágica</string>
+    <string name="title_spell_modifier">Modificador de lanzamiento</string>
+    <string name="title_spell_save_dc">CD salvación de conjuro</string>
+    <string name="title_spell_attack_bonus">Bonus ataque de conjuro</string>
+
+    <!-- Opciones D&D 2024 para los desplegables -->
+    <string-array name="classes_array">
+        <item>Guerrero</item>
+        <item>Mago</item>
+        <item>Pícaro</item>
+        <item>Clérigo</item>
+        <item>Bárbaro</item>
+        <item>Bardo</item>
+        <item>Brujo</item>
+        <item>Druida</item>
+        <item>Explorador</item>
+        <item>Hechicero</item>
+        <item>Monje</item>
+        <item>Paladín</item>
+    </string-array>
+
+    <string-array name="races_array">
+        <item>Humano</item>
+        <item>Elfo</item>
+        <item>Enano</item>
+        <item>Mediano</item>
+        <item>Dracónido</item>
+        <item>Gnomo</item>
+        <item>Goliat</item>
+        <item>Orco</item>
+        <item>Tiflin</item>
+        <item>Aasimar</item>
+    </string-array>
+
+    <string-array name="subclasses_array">
+        <item>Sin subclase</item>
+        <item>Campeón</item>
+        <item>Maestro de batalla</item>
+        <item>Evocación</item>
+        <item>Adivinación</item>
+        <item>Ladrón</item>
+        <item>Asesino</item>
+        <item>Dominio de la Vida</item>
+        <item>Bersérker</item>
+        <item>Círculo de la Luna</item>
+        <item>Cazador</item>
+        <item>Devoción</item>
+    </string-array>
+
+    <!-- ===== Cambios de master ===== -->
+
     <string name="user">USUARI</string>
     <string name="pwd">CONTRASENYA</string>
     <string name="noLogIn">Continuar sense iniciar sessió</string>

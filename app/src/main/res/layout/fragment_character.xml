@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    tools:ignore="SmallSp,TooManyViews,TooDeepLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-48dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardCharacterSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/cardBackground"
+            app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Cabecera: foto y nombre -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ImageCharacterExemple"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop"
+                        tools:background="#33FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/NameCharacterExemple"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="personName"
+                            android:ellipsize="end"
+                            android:hint="Nombre Personaje"
+                            android:inputType="textPersonName"
+                            android:maxLines="2"
+                            android:text="Nombre Personaje"
+                            android:textColor="@color/colorText"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Cajas de Clase, Raza y Subclase (Desplegables / Selectores) -->
+                <LinearLayout
+                    android:id="@+id/ClassRaceSubclassRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <!-- Caja Clase -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CardClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.7"
+                                android:gravity="center"
+                                android:text="@string/title_class"
+                                android:textColor="@color/colorText"
+                                android:textSize="10sp" />
+
+                            <Spinner
+                                android:id="@+id/SpinnerClass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:backgroundTint="@color/colorText"
+                                android:entries="@array/classes_array"
+                                android:gravity="center"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Caja Raza -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CardRace"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.7"
+                                android:gravity="center"
+                                android:text="@string/title_race"
+                                android:textColor="@color/colorText"
+                                android:textSize="10sp" />
+
+                            <Spinner
+                                android:id="@+id/SpinnerRace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:backgroundTint="@color/colorText"
+                                android:entries="@array/races_array"
+                                android:gravity="center"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Caja Subclase -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CardSubclass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="6dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.7"
+                                android:gravity="center"
+                                android:text="@string/title_subclass"
+                                android:textColor="@color/colorText"
+                                android:textSize="10sp" />
+
+                            <Spinner
+                                android:id="@+id/SpinnerSubclass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:backgroundTint="@color/colorText"
+                                android:entries="@array/subclasses_array"
+                                android:gravity="center"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <!-- Modificador de competencia, Nivel y barra de progreso -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- Modificador por competencia -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CardProficiencyBonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:minHeight="54dp"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            android:paddingTop="6dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="6dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.7"
+                                android:gravity="center"
+                                android:text="@string/title_proficiency_bonus"
+                                android:textColor="@color/colorText"
+                                android:textSize="9sp" />
+
+                            <EditText
+                                android:id="@+id/ProficiencyBonusCharacter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:importantForAutofill="no"
+                                android:inputType="text"
+                                android:minWidth="40dp"
+                                android:minHeight="0dp"
+                                android:padding="0dp"
+                                android:text="+2"
+                                android:textColor="@color/colorText"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/LevelLabelCharacter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_level"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/LevelValueCharacter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:minWidth="20dp"
+                        android:minHeight="0dp"
+                        android:padding="0dp"
+                        android:text="3"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/LevelProgressCharacter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="40"
+                        app:indicatorColor="@color/buttonColor"
+                        app:indicatorTrackGapSize="0dp"
+                        app:trackColor="@color/backgroud"
+                        app:trackCornerRadius="5dp"
+                        app:trackStopIndicatorSize="0dp"
+                        app:trackThickness="10dp" />
+
+                    <!-- Botón circular para subir de nivel -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/BtnLevelUp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="@color/buttonColor"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:padding="6dp"
+                            android:src="@drawable/add_simbol"
+                            app:tint="@color/colorText" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <!-- Bloque principal: estadísticas a la izquierda, otra cosa a la derecha -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <!-- Columna izquierda: las 6 estadísticas -->
+
+                    <!-- Columna derecha: vida, armadura, velocidad e iniciativa -->
+                    <LinearLayout
+                        android:id="@+id/StatsColumn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <!-- Fuerza -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="12dp"
+                                android:paddingTop="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:text="@string/title_strength"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/StrengthScoreCharacter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.7"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:text="15"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardCornerRadius="8dp">
+
+                                    <TextView
+                                        android:id="@+id/StrengthModifierCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:minWidth="40dp"
+                                        android:padding="4dp"
+                                        android:text="+2"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Destreza -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="12dp"
+                                android:paddingTop="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:text="@string/title_dexterity"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/DexterityScoreCharacter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.7"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:text="14"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardCornerRadius="8dp">
+
+                                    <TextView
+                                        android:id="@+id/DexterityModifierCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:minWidth="40dp"
+                                        android:padding="4dp"
+                                        android:text="+2"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Constitución -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="12dp"
+                                android:paddingTop="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:text="@string/title_constitution"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/ConstitutionScoreCharacter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.7"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:text="13"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardCornerRadius="8dp">
+
+                                    <TextView
+                                        android:id="@+id/ConstitutionModifierCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:minWidth="40dp"
+                                        android:padding="4dp"
+                                        android:text="+1"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Inteligencia -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="12dp"
+                                android:paddingTop="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:text="@string/title_intelligence"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/IntelligenceScoreCharacter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.7"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:text="10"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardCornerRadius="8dp">
+
+                                    <TextView
+                                        android:id="@+id/IntelligenceModifierCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:minWidth="40dp"
+                                        android:padding="4dp"
+                                        android:text="+0"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Sabiduría -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="12dp"
+                                android:paddingTop="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:text="@string/title_wisdom"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/WisdomScoreCharacter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.7"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:text="12"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardCornerRadius="8dp">
+
+                                    <TextView
+                                        android:id="@+id/WisdomModifierCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:minWidth="40dp"
+                                        android:padding="4dp"
+                                        android:text="+1"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Carisma -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingStart="12dp"
+                                android:paddingTop="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:text="@string/title_charisma"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/CharismaScoreCharacter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:alpha="0.7"
+                                    android:importantForAutofill="no"
+                                    android:inputType="number"
+                                    android:text="8"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="14sp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardCornerRadius="8dp">
+
+                                    <TextView
+                                        android:id="@+id/CharismaModifierCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:minWidth="40dp"
+                                        android:padding="4dp"
+                                        android:text="-1"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Desplegable Competencias -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CardProficiencies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:animateLayoutChanges="true"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <!-- Cabecera del desplegable Competencias -->
+                                <LinearLayout
+                                    android:id="@+id/ProficienciesHeader"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/title_proficiencies"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/ProficienciesArrow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:text="▼"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <!-- Lista de competencias -->
+                                <LinearLayout
+                                    android:id="@+id/ProficienciesListContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:orientation="vertical">
+
+                                    <!-- Competencia 1 -->
+                                    <EditText
+                                        android:id="@+id/ProficiencyItem1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minHeight="0dp"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp"
+                                        android:text="Armaduras ligeras y medias"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:alpha="0.15"
+                                        android:background="@color/colorText" />
+
+                                    <!-- Competencia 2 -->
+                                    <EditText
+                                        android:id="@+id/ProficiencyItem2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minHeight="0dp"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp"
+                                        android:text="Armas marciales y simples"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:alpha="0.15"
+                                        android:background="@color/colorText" />
+
+                                    <!-- Competencia 3 -->
+                                    <EditText
+                                        android:id="@+id/ProficiencyItem3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minHeight="0dp"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp"
+                                        android:text="Herramientas de ladrón"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:alpha="0.15"
+                                        android:background="@color/colorText" />
+
+                                    <!-- Última línea: Añadir competencia -->
+                                    <LinearLayout
+                                        android:id="@+id/RowAddProficiencyItem"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/NewProficiencyItemInput"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:alpha="0.7"
+                                            android:background="@null"
+                                            android:hint="Añadir competencia..."
+                                            android:importantForAutofill="no"
+                                            android:inputType="text"
+                                            android:minHeight="0dp"
+                                            android:paddingTop="3dp"
+                                            android:paddingBottom="3dp"
+                                            android:textColor="@color/colorText"
+                                            android:textColorHint="@color/colorText"
+                                            android:textSize="12sp" />
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/BtnAddProficiencyItem"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginStart="6dp"
+                                            android:clickable="true"
+                                            android:focusable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            app:cardBackgroundColor="@color/buttonColor"
+                                            app:cardCornerRadius="10dp">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:contentDescription="@string/app_name"
+                                                android:padding="4dp"
+                                                android:src="@drawable/add_simbol"
+                                                app:tint="@color/colorText" />
+                                        </androidx.cardview.widget.CardView>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RightColumn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <!-- Fila 1: vida actual y clase de armadura -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- Vida actual -->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="3dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardCornerRadius="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="6dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:gravity="center"
+                                        android:minLines="2"
+                                        android:text="@string/title_current_hp"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="10sp" />
+
+                                    <EditText
+                                        android:id="@+id/HealthCurrentCharacter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:importantForAutofill="no"
+                                        android:inputType="number"
+                                        android:minHeight="0dp"
+                                        android:padding="0dp"
+                                        android:text="24"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <!-- Clase de armadura -->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardCornerRadius="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="6dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:gravity="center"
+                                        android:minLines="2"
+                                        android:text="@string/title_armor_class"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="10sp" />
+
+                                    <EditText
+                                        android:id="@+id/ArmorClassCharacter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:importantForAutofill="no"
+                                        android:inputType="number"
+                                        android:minHeight="0dp"
+                                        android:padding="0dp"
+                                        android:text="15"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <!-- Fila 2: velocidad e iniciativa -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal">
+
+                            <!-- Velocidad -->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="3dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardCornerRadius="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="6dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/title_speed"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="10sp" />
+
+                                    <EditText
+                                        android:id="@+id/SpeedCharacter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minHeight="0dp"
+                                        android:padding="0dp"
+                                        android:text="9 m"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <!-- Iniciativa -->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardCornerRadius="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="6dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/title_initiative"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/InitiativeCharacter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="+2"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="22sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <!-- Desplegable Inventario -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CardInventory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:animateLayoutChanges="true"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <!-- Cabecera del desplegable Inventario -->
+                                <LinearLayout
+                                    android:id="@+id/InventoryHeader"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/title_inventory"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/InventoryArrow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:alpha="0.7"
+                                        android:text="▼"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <!-- Lista de objetos del inventario -->
+                                <LinearLayout
+                                    android:id="@+id/InventoryListContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:orientation="vertical">
+
+                                    <!-- Objeto 1 -->
+                                    <EditText
+                                        android:id="@+id/InventoryItem1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minHeight="0dp"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp"
+                                        android:text="Mochila de explorador"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:alpha="0.15"
+                                        android:background="@color/colorText" />
+
+                                    <!-- Objeto 2 -->
+                                    <EditText
+                                        android:id="@+id/InventoryItem2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minHeight="0dp"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp"
+                                        android:text="Poción de curación"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:alpha="0.15"
+                                        android:background="@color/colorText" />
+
+                                    <!-- Objeto 3 -->
+                                    <EditText
+                                        android:id="@+id/InventoryItem3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minHeight="0dp"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp"
+                                        android:text="Raciones (5 días)"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="12sp" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:alpha="0.15"
+                                        android:background="@color/colorText" />
+
+                                    <!-- Última línea: Añadir un objeto a la lista -->
+                                    <LinearLayout
+                                        android:id="@+id/RowAddInventoryItem"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/NewInventoryItemInput"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:alpha="0.7"
+                                            android:background="@null"
+                                            android:hint="Añadir objeto..."
+                                            android:importantForAutofill="no"
+                                            android:inputType="text"
+                                            android:minHeight="0dp"
+                                            android:paddingTop="3dp"
+                                            android:paddingBottom="3dp"
+                                            android:textColor="@color/colorText"
+                                            android:textColorHint="@color/colorText"
+                                            android:textSize="12sp" />
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/BtnAddInventoryItem"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginStart="6dp"
+                                            android:clickable="true"
+                                            android:focusable="true"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            app:cardBackgroundColor="@color/buttonColor"
+                                            app:cardCornerRadius="10dp">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center"
+                                                android:contentDescription="@string/app_name"
+                                                android:padding="4dp"
+                                                android:src="@drawable/add_simbol"
+                                                app:tint="@color/colorText" />
+                                        </androidx.cardview.widget.CardView>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Sección: Lanzamiento de Conjuros / Magia -->
+                        <!-- Recuadro: Aptitud Mágica -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CardSpellcastingAbility"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="0.7"
+                                    android:gravity="center"
+                                    android:text="@string/title_spellcasting_ability"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="10sp" />
+
+                                <EditText
+                                    android:id="@+id/SpellcastingAbilityCharacter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="text"
+                                    android:minHeight="0dp"
+                                    android:padding="0dp"
+                                    android:text="Carisma"
+                                    android:textColor="@color/colorText"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Columna de 3 cajas verticales: Modificador de lanzamiento, CD de salvación y Bonus de ataque -->
+                        <LinearLayout
+                            android:id="@+id/SpellcastingStatsColumn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="vertical">
+
+                            <!-- Caja 1: Modificador de lanzamiento -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/CardSpellModifier"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardCornerRadius="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingStart="12dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingEnd="12dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:alpha="0.7"
+                                        android:text="@string/title_spell_modifier"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="11sp" />
+
+                                    <EditText
+                                        android:id="@+id/SpellModifierCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minWidth="36dp"
+                                        android:minHeight="0dp"
+                                        android:padding="0dp"
+                                        android:text="-1"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <!-- Caja 2: CD de salvación de conjuro -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/CardSpellSaveDc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardCornerRadius="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingStart="12dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingEnd="12dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:alpha="0.7"
+                                        android:text="@string/title_spell_save_dc"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="11sp" />
+
+                                    <EditText
+                                        android:id="@+id/SpellSaveDcCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:importantForAutofill="no"
+                                        android:inputType="number"
+                                        android:minWidth="36dp"
+                                        android:minHeight="0dp"
+                                        android:padding="0dp"
+                                        android:text="9"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <!-- Caja 3: Bonus de ataque de conjuro -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/CardSpellAttackBonus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardCornerRadius="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingStart="12dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingEnd="12dp"
+                                    android:paddingBottom="8dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:alpha="0.7"
+                                        android:text="@string/title_spell_attack_bonus"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="11sp" />
+
+                                    <EditText
+                                        android:id="@+id/SpellAttackBonusCharacter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:gravity="end"
+                                        android:importantForAutofill="no"
+                                        android:inputType="text"
+                                        android:minWidth="36dp"
+                                        android:minHeight="0dp"
+                                        android:padding="0dp"
+                                        android:text="+1"
+                                        android:textColor="@color/colorText"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
