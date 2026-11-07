@@ -77,7 +77,8 @@
                 android:contentDescription="@string/d4"
                 android:textColor="@color/text_principal_fosc"
                 app:backgroundTint="@color/primari_roig_brasa_fosc"
-                app:icon="@android:drawable/ic_menu_gallery"
+                app:icon="@drawable/dice4"
+                app:iconSize="50dp"
                 app:iconGravity="top"
                 app:iconPadding="4dp" />
 
@@ -91,7 +92,8 @@
                 android:contentDescription="@string/d6"
                 android:textColor="@color/text_principal_fosc"
                 app:backgroundTint="@color/primari_roig_brasa_fosc"
-                app:icon="@android:drawable/ic_menu_gallery"
+                app:icon="@drawable/dice6"
+                app:iconSize="50dp"
                 app:iconGravity="top"
                 app:iconPadding="4dp" />
 
@@ -105,7 +107,8 @@
                 android:contentDescription="@string/d8"
                 android:textColor="@color/text_principal_fosc"
                 app:backgroundTint="@color/primari_roig_brasa_fosc"
-                app:icon="@android:drawable/ic_menu_gallery"
+                app:icon="@drawable/dice8"
+                app:iconSize="50dp"
                 app:iconGravity="top"
                 app:iconPadding="4dp" />
 
@@ -128,7 +131,8 @@
                 android:contentDescription="@string/d10"
                 android:textColor="@color/text_principal_fosc"
                 app:backgroundTint="@color/primari_roig_brasa_fosc"
-                app:icon="@android:drawable/ic_menu_gallery"
+                app:icon="@drawable/dice10"
+                app:iconSize="50dp"
                 app:iconGravity="top"
                 app:iconPadding="4dp" />
 
@@ -142,7 +146,8 @@
                 android:contentDescription="@string/d12"
                 android:textColor="@color/text_principal_fosc"
                 app:backgroundTint="@color/primari_roig_brasa_fosc"
-                app:icon="@android:drawable/ic_menu_gallery"
+                app:icon="@drawable/dice12"
+                app:iconSize="50dp"
                 app:iconGravity="top"
                 app:iconPadding="4dp" />
 
@@ -156,7 +161,8 @@
                 android:contentDescription="@string/d20"
                 android:textColor="@color/text_principal_fosc"
                 app:backgroundTint="@color/primari_roig_brasa_fosc"
-                app:icon="@android:drawable/ic_menu_gallery"
+                app:icon="@drawable/dice20"
+                app:iconSize="50dp"
                 app:iconGravity="top"
                 app:iconPadding="4dp" />
 

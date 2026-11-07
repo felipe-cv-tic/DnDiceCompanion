@@ -60,7 +60,7 @@
             android:insetBottom="0dp"
             app:cornerRadius="0dp"
             app:backgroundTint="@color/buttonColor"
-            app:icon="@drawable/dice_20"
+            app:icon="@drawable/dice20"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="50dp"
