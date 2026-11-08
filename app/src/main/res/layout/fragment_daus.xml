@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="24dp"
-    android:background="@color/fons_fosc"
+    android:background="?attr/android:windowBackground"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_marginBottom="24dp"
         android:gravity="center"
         android:text="@string/roll_dice_title"
-        android:textColor="@color/text_principal_fosc"
+        android:textColor="?attr/colorOnSurface"
         android:textSize="28sp"
         android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
             android:layout_marginBottom="12dp"
             android:contentDescription="@string/dice_image_desc"
             android:src="@android:drawable/ic_menu_gallery"
-            app:tint="@color/accent_arca_fosc" />
+            app:tint="?attr/colorTertiary" />
 
         <TextView
             android:id="@+id/tv_dice_result"
@@ -48,7 +48,7 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center"
             android:text="@string/dice_result_placeholder"
-            android:textColor="@color/text_secundari_fosc"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -75,8 +75,8 @@
                 android:layout_margin="4dp"
                 android:text="@string/d4"
                 android:contentDescription="@string/d4"
-                android:textColor="@color/text_principal_fosc"
-                app:backgroundTint="@color/primari_roig_brasa_fosc"
+                android:textColor="?attr/colorOnSurface"
+                app:backgroundTint="?attr/colorPrimary"
                 app:icon="@drawable/dice4"
                 app:iconSize="50dp"
                 app:iconGravity="top"
@@ -90,8 +90,8 @@
                 android:layout_margin="4dp"
                 android:text="@string/d6"
                 android:contentDescription="@string/d6"
-                android:textColor="@color/text_principal_fosc"
-                app:backgroundTint="@color/primari_roig_brasa_fosc"
+                android:textColor="?attr/colorOnSurface"
+                app:backgroundTint="?attr/colorPrimary"
                 app:icon="@drawable/dice6"
                 app:iconSize="50dp"
                 app:iconGravity="top"
@@ -105,8 +105,8 @@
                 android:layout_margin="4dp"
                 android:text="@string/d8"
                 android:contentDescription="@string/d8"
-                android:textColor="@color/text_principal_fosc"
-                app:backgroundTint="@color/primari_roig_brasa_fosc"
+                android:textColor="?attr/colorOnSurface"
+                app:backgroundTint="?attr/colorPrimary"
                 app:icon="@drawable/dice8"
                 app:iconSize="50dp"
                 app:iconGravity="top"
@@ -129,8 +129,8 @@
                 android:layout_margin="4dp"
                 android:text="@string/d10"
                 android:contentDescription="@string/d10"
-                android:textColor="@color/text_principal_fosc"
-                app:backgroundTint="@color/primari_roig_brasa_fosc"
+                android:textColor="?attr/colorOnSurface"
+                app:backgroundTint="?attr/colorPrimary"
                 app:icon="@drawable/dice10"
                 app:iconSize="50dp"
                 app:iconGravity="top"
@@ -144,8 +144,8 @@
                 android:layout_margin="4dp"
                 android:text="@string/d12"
                 android:contentDescription="@string/d12"
-                android:textColor="@color/text_principal_fosc"
-                app:backgroundTint="@color/primari_roig_brasa_fosc"
+                android:textColor="?attr/colorOnSurface"
+                app:backgroundTint="?attr/colorPrimary"
                 app:icon="@drawable/dice12"
                 app:iconSize="50dp"
                 app:iconGravity="top"
@@ -159,8 +159,8 @@
                 android:layout_margin="4dp"
                 android:text="@string/d20"
                 android:contentDescription="@string/d20"
-                android:textColor="@color/text_principal_fosc"
-                app:backgroundTint="@color/primari_roig_brasa_fosc"
+                android:textColor="?attr/colorOnSurface"
+                app:backgroundTint="?attr/colorPrimary"
                 app:icon="@drawable/dice20"
                 app:iconSize="50dp"
                 app:iconGravity="top"

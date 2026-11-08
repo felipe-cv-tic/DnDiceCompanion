@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.DnDiceCompanion" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primari_roig_alt_contrast</item>
+        <item name="colorSecondary">@color/secundari_or_alt_contrast</item>
+        <item name="colorTertiary">@color/accent_arca_alt_contrast</item>
+        <item name="android:windowBackground">@color/fons_alt_contrast</item>
+        <item name="colorSurface">@color/superficie_alt_contrast</item>
+        <item name="colorOnSurface">@color/text_principal_alt_contrast</item>
+        <item name="colorOnSurfaceVariant">@color/text_secundari_alt_contrast</item>
+        <item name="colorOutline">@color/vora_alt_contrast</item>
+    </style>
+</resources>

@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroud"
+    android:orientation="vertical"
+    android:background="?attr/android:windowBackground"
     tools:ignore="SmallSp,TooManyViews,TooDeepLayout">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-48dp">
+        android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/CardCharacterSheet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            app:cardBackgroundColor="@color/cardBackground"
+            app:cardBackgroundColor="?attr/colorSurface"
             app:cardCornerRadius="30dp">
 
             <LinearLayout
@@ -39,8 +38,7 @@
                         android:layout_height="100dp"
                         android:layout_marginEnd="16dp"
                         android:contentDescription="@string/hint_character_name"
-                        android:scaleType="centerCrop"
-                        tools:background="#33FFFFFF" />
+                        android:scaleType="centerCrop" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -57,7 +55,7 @@
                             android:hint="@string/hint_character_name"
                             android:inputType="textPersonName"
                             android:maxLines="2"
-                            android:textColor="@color/colorText"
+                            android:textColor="?attr/colorOnSurface"
                             android:textSize="25sp"
                             android:textStyle="bold"
                             tools:text="Nombre Personaje" />
@@ -78,7 +76,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="3dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardBackgroundColor="?attr/android:windowBackground"
                         app:cardCornerRadius="12dp">
 
                         <LinearLayout
@@ -93,7 +91,7 @@
                                 android:alpha="0.7"
                                 android:gravity="center"
                                 android:text="@string/title_class"
-                                android:textColor="@color/colorText"
+                                android:textColor="?attr/colorOnSurface"
                                 android:textSize="10sp" />
 
                             <Spinner
@@ -101,7 +99,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:backgroundTint="@color/colorText"
+                                android:backgroundTint="?attr/colorOnSurface"
                                 android:entries="@array/classes_array"
                                 android:gravity="center"
                                 android:spinnerMode="dropdown" />
@@ -115,7 +113,7 @@
                         android:layout_marginStart="3dp"
                         android:layout_marginEnd="3dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardBackgroundColor="?attr/android:windowBackground"
                         app:cardCornerRadius="12dp">
 
                         <LinearLayout
@@ -130,7 +128,7 @@
                                 android:alpha="0.7"
                                 android:gravity="center"
                                 android:text="@string/title_race"
-                                android:textColor="@color/colorText"
+                                android:textColor="?attr/colorOnSurface"
                                 android:textSize="10sp" />
 
                             <Spinner
@@ -138,7 +136,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:backgroundTint="@color/colorText"
+                                android:backgroundTint="?attr/colorOnSurface"
                                 android:entries="@array/races_array"
                                 android:gravity="center"
                                 android:spinnerMode="dropdown" />
@@ -151,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="3dp"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardBackgroundColor="?attr/android:windowBackground"
                         app:cardCornerRadius="12dp">
 
                         <LinearLayout
@@ -166,7 +164,7 @@
                                 android:alpha="0.7"
                                 android:gravity="center"
                                 android:text="@string/title_subclass"
-                                android:textColor="@color/colorText"
+                                android:textColor="?attr/colorOnSurface"
                                 android:textSize="10sp" />
 
                             <Spinner
@@ -174,7 +172,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:backgroundTint="@color/colorText"
+                                android:backgroundTint="?attr/colorOnSurface"
                                 android:entries="@array/subclasses_array"
                                 android:gravity="center"
                                 android:spinnerMode="dropdown" />
@@ -194,7 +192,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="12dp"
-                        app:cardBackgroundColor="@color/backgroud"
+                        app:cardBackgroundColor="?attr/android:windowBackground"
                         app:cardCornerRadius="12dp">
 
                         <LinearLayout
@@ -214,7 +212,7 @@
                                 android:alpha="0.7"
                                 android:gravity="center"
                                 android:text="@string/title_proficiency_bonus"
-                                android:textColor="@color/colorText"
+                                android:textColor="?attr/colorOnSurface"
                                 android:textSize="9sp" />
 
                             <EditText
@@ -229,7 +227,7 @@
                                 android:minWidth="40dp"
                                 android:minHeight="0dp"
                                 android:padding="0dp"
-                                android:textColor="@color/colorText"
+                                android:textColor="?attr/colorOnSurface"
                                 android:textSize="22sp"
                                 android:textStyle="bold"
                                 tools:text="+2" />
@@ -241,7 +239,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title_level"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -258,7 +256,7 @@
                         android:minWidth="20dp"
                         android:minHeight="0dp"
                         android:padding="0dp"
-                        android:textColor="@color/colorText"
+                        android:textColor="?attr/colorOnSurface"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         tools:text="3" />
@@ -270,9 +268,9 @@
                         android:layout_weight="1"
                         android:max="100"
                         android:progress="40"
-                        app:indicatorColor="@color/buttonColor"
+                        app:indicatorColor="?attr/colorPrimary"
                         app:indicatorTrackGapSize="0dp"
-                        app:trackColor="@color/backgroud"
+                        app:trackColor="?attr/android:windowBackground"
                         app:trackCornerRadius="5dp"
                         app:trackStopIndicatorSize="0dp"
                         app:trackThickness="10dp" />
@@ -285,7 +283,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:foreground="?attr/selectableItemBackground"
-                        app:cardBackgroundColor="@color/buttonColor"
+                        app:cardBackgroundColor="?attr/colorPrimary"
                         app:cardCornerRadius="15dp">
 
                         <ImageView
@@ -295,7 +293,7 @@
                             android:contentDescription="@string/title_level"
                             android:padding="6dp"
                             android:src="@drawable/add_simbol"
-                            app:tint="@color/colorText" />
+                            app:tint="?attr/colorOnSurface" />
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
@@ -317,7 +315,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -336,7 +334,7 @@
                                     android:layout_weight="1"
                                     android:maxLines="1"
                                     android:text="@string/title_strength"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
 
@@ -348,14 +346,14 @@
                                     android:alpha="0.7"
                                     android:importantForAutofill="no"
                                     android:inputType="number"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     tools:text="15" />
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardBackgroundColor="?attr/colorPrimary"
                                     app:cardCornerRadius="8dp">
 
                                     <TextView
@@ -365,7 +363,7 @@
                                         android:gravity="center"
                                         android:minWidth="40dp"
                                         android:padding="4dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="16sp"
                                         android:textStyle="bold"
                                         tools:text="+2" />
@@ -377,7 +375,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -396,7 +394,7 @@
                                     android:layout_weight="1"
                                     android:maxLines="1"
                                     android:text="@string/title_dexterity"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
 
@@ -408,14 +406,14 @@
                                     android:alpha="0.7"
                                     android:importantForAutofill="no"
                                     android:inputType="number"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     tools:text="14" />
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardBackgroundColor="?attr/colorPrimary"
                                     app:cardCornerRadius="8dp">
 
                                     <TextView
@@ -425,7 +423,7 @@
                                         android:gravity="center"
                                         android:minWidth="40dp"
                                         android:padding="4dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="16sp"
                                         android:textStyle="bold"
                                         tools:text="+2" />
@@ -437,7 +435,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -456,7 +454,7 @@
                                     android:layout_weight="1"
                                     android:maxLines="1"
                                     android:text="@string/title_constitution"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
 
@@ -468,14 +466,14 @@
                                     android:alpha="0.7"
                                     android:importantForAutofill="no"
                                     android:inputType="number"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     tools:text="13" />
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardBackgroundColor="?attr/colorPrimary"
                                     app:cardCornerRadius="8dp">
 
                                     <TextView
@@ -485,7 +483,7 @@
                                         android:gravity="center"
                                         android:minWidth="40dp"
                                         android:padding="4dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="16sp"
                                         android:textStyle="bold"
                                         tools:text="+1" />
@@ -497,7 +495,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -516,7 +514,7 @@
                                     android:layout_weight="1"
                                     android:maxLines="1"
                                     android:text="@string/title_intelligence"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
 
@@ -528,14 +526,14 @@
                                     android:alpha="0.7"
                                     android:importantForAutofill="no"
                                     android:inputType="number"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     tools:text="10" />
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardBackgroundColor="?attr/colorPrimary"
                                     app:cardCornerRadius="8dp">
 
                                     <TextView
@@ -545,7 +543,7 @@
                                         android:gravity="center"
                                         android:minWidth="40dp"
                                         android:padding="4dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="16sp"
                                         android:textStyle="bold"
                                         tools:text="+0" />
@@ -557,7 +555,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -576,7 +574,7 @@
                                     android:layout_weight="1"
                                     android:maxLines="1"
                                     android:text="@string/title_wisdom"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
 
@@ -588,14 +586,14 @@
                                     android:alpha="0.7"
                                     android:importantForAutofill="no"
                                     android:inputType="number"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     tools:text="12" />
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardBackgroundColor="?attr/colorPrimary"
                                     app:cardCornerRadius="8dp">
 
                                     <TextView
@@ -605,7 +603,7 @@
                                         android:gravity="center"
                                         android:minWidth="40dp"
                                         android:padding="4dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="16sp"
                                         android:textStyle="bold"
                                         tools:text="+1" />
@@ -616,7 +614,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -635,7 +633,7 @@
                                     android:layout_weight="1"
                                     android:maxLines="1"
                                     android:text="@string/title_charisma"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
 
@@ -647,14 +645,14 @@
                                     android:alpha="0.7"
                                     android:importantForAutofill="no"
                                     android:inputType="number"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="14sp"
                                     tools:text="8" />
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardBackgroundColor="@color/buttonColor"
+                                    app:cardBackgroundColor="?attr/colorPrimary"
                                     app:cardCornerRadius="8dp">
 
                                     <TextView
@@ -664,7 +662,7 @@
                                         android:gravity="center"
                                         android:minWidth="40dp"
                                         android:padding="4dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="16sp"
                                         android:textStyle="bold"
                                         tools:text="-1" />
@@ -678,7 +676,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="6dp"
                             android:animateLayoutChanges="true"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -702,7 +700,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
                                         android:text="@string/title_proficiencies"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp"
                                         android:textStyle="bold" />
 
@@ -711,7 +709,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:alpha="0.7"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="10sp"
                                         tools:text="▼" />
                                 </LinearLayout>
@@ -734,14 +732,14 @@
                                         android:paddingTop="3dp"
                                         android:paddingBottom="3dp"
                                         android:text="@string/prof_light_medium_armor"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:alpha="0.15"
-                                        android:background="@color/colorText" />
+                                        android:background="?attr/colorOnSurface" />
 
                                     <EditText
                                         android:id="@+id/ProficiencyItem2"
@@ -754,14 +752,14 @@
                                         android:paddingTop="3dp"
                                         android:paddingBottom="3dp"
                                         android:text="@string/prof_martial_simple_weapons"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:alpha="0.15"
-                                        android:background="@color/colorText" />
+                                        android:background="?attr/colorOnSurface" />
 
                                     <EditText
                                         android:id="@+id/ProficiencyItem3"
@@ -774,14 +772,14 @@
                                         android:paddingTop="3dp"
                                         android:paddingBottom="3dp"
                                         android:text="@string/prof_thieves_tools"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:alpha="0.15"
-                                        android:background="@color/colorText" />
+                                        android:background="?attr/colorOnSurface" />
 
                                     <LinearLayout
                                         android:id="@+id/RowAddProficiencyItem"
@@ -804,8 +802,8 @@
                                             android:minHeight="0dp"
                                             android:paddingTop="3dp"
                                             android:paddingBottom="3dp"
-                                            android:textColor="@color/colorText"
-                                            android:textColorHint="@color/colorText"
+                                            android:textColor="?attr/colorOnSurface"
+                                            android:textColorHint="?attr/colorOnSurfaceVariant"
                                             android:textSize="12sp" />
 
                                         <androidx.cardview.widget.CardView
@@ -816,7 +814,7 @@
                                             android:clickable="true"
                                             android:focusable="true"
                                             android:foreground="?attr/selectableItemBackground"
-                                            app:cardBackgroundColor="@color/buttonColor"
+                                            app:cardBackgroundColor="?attr/colorPrimary"
                                             app:cardCornerRadius="10dp">
 
                                             <ImageView
@@ -826,7 +824,7 @@
                                                 android:contentDescription="@string/hint_add_proficiency"
                                                 android:padding="4dp"
                                                 android:src="@drawable/add_simbol"
-                                                app:tint="@color/colorText" />
+                                                app:tint="?attr/colorOnSurface" />
                                         </androidx.cardview.widget.CardView>
                                     </LinearLayout>
 
@@ -853,7 +851,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="3dp"
                                 android:layout_weight="1"
-                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardBackgroundColor="?attr/android:windowBackground"
                                 app:cardCornerRadius="12dp">
 
                                 <LinearLayout
@@ -869,7 +867,7 @@
                                         android:gravity="center"
                                         android:minLines="2"
                                         android:text="@string/title_current_hp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="10sp" />
 
                                     <EditText
@@ -882,7 +880,7 @@
                                         android:inputType="number"
                                         android:minHeight="0dp"
                                         android:padding="0dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="22sp"
                                         android:textStyle="bold"
                                         tools:text="24" />
@@ -894,7 +892,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="3dp"
                                 android:layout_weight="1"
-                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardBackgroundColor="?attr/android:windowBackground"
                                 app:cardCornerRadius="12dp">
 
                                 <LinearLayout
@@ -910,7 +908,7 @@
                                         android:gravity="center"
                                         android:minLines="2"
                                         android:text="@string/title_armor_class"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="10sp" />
 
                                     <EditText
@@ -923,7 +921,7 @@
                                         android:inputType="number"
                                         android:minHeight="0dp"
                                         android:padding="0dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="22sp"
                                         android:textStyle="bold"
                                         tools:text="15" />
@@ -943,7 +941,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="3dp"
                                 android:layout_weight="1"
-                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardBackgroundColor="?attr/android:windowBackground"
                                 app:cardCornerRadius="12dp">
 
                                 <LinearLayout
@@ -959,7 +957,7 @@
                                         android:gravity="center"
                                         android:maxLines="1"
                                         android:text="@string/title_speed"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="10sp" />
 
                                     <EditText
@@ -972,7 +970,7 @@
                                         android:inputType="text"
                                         android:minHeight="0dp"
                                         android:padding="0dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="22sp"
                                         android:textStyle="bold"
                                         tools:text="9 m" />
@@ -984,7 +982,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="3dp"
                                 android:layout_weight="1"
-                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardBackgroundColor="?attr/android:windowBackground"
                                 app:cardCornerRadius="12dp">
 
                                 <LinearLayout
@@ -1000,7 +998,7 @@
                                         android:gravity="center"
                                         android:maxLines="1"
                                         android:text="@string/title_initiative"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="10sp" />
 
                                     <TextView
@@ -1008,7 +1006,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="22sp"
                                         android:textStyle="bold"
                                         tools:text="+2" />
@@ -1022,7 +1020,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="6dp"
                             android:animateLayoutChanges="true"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -1046,7 +1044,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
                                         android:text="@string/title_inventory"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp"
                                         android:textStyle="bold" />
 
@@ -1055,7 +1053,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:alpha="0.7"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="10sp"
                                         tools:text="▼" />
                                 </LinearLayout>
@@ -1078,14 +1076,14 @@
                                         android:paddingTop="3dp"
                                         android:paddingBottom="3dp"
                                         android:text="@string/inv_explorer_pack"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:alpha="0.15"
-                                        android:background="@color/colorText" />
+                                        android:background="?attr/colorOnSurface" />
 
                                     <EditText
                                         android:id="@+id/InventoryItem2"
@@ -1098,14 +1096,14 @@
                                         android:paddingTop="3dp"
                                         android:paddingBottom="3dp"
                                         android:text="@string/inv_healing_potion"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:alpha="0.15"
-                                        android:background="@color/colorText" />
+                                        android:background="?attr/colorOnSurface" />
 
                                     <EditText
                                         android:id="@+id/InventoryItem3"
@@ -1118,14 +1116,14 @@
                                         android:paddingTop="3dp"
                                         android:paddingBottom="3dp"
                                         android:text="@string/inv_rations"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="12sp" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:alpha="0.15"
-                                        android:background="@color/colorText" />
+                                        android:background="?attr/colorOnSurface" />
 
                                     <LinearLayout
                                         android:id="@+id/RowAddInventoryItem"
@@ -1148,8 +1146,8 @@
                                             android:minHeight="0dp"
                                             android:paddingTop="3dp"
                                             android:paddingBottom="3dp"
-                                            android:textColor="@color/colorText"
-                                            android:textColorHint="@color/colorText"
+                                            android:textColor="?attr/colorOnSurface"
+                                            android:textColorHint="?attr/colorOnSurfaceVariant"
                                             android:textSize="12sp" />
 
                                         <androidx.cardview.widget.CardView
@@ -1160,7 +1158,7 @@
                                             android:clickable="true"
                                             android:focusable="true"
                                             android:foreground="?attr/selectableItemBackground"
-                                            app:cardBackgroundColor="@color/buttonColor"
+                                            app:cardBackgroundColor="?attr/colorPrimary"
                                             app:cardCornerRadius="10dp">
 
                                             <ImageView
@@ -1170,7 +1168,7 @@
                                                 android:contentDescription="@string/hint_add_item"
                                                 android:padding="4dp"
                                                 android:src="@drawable/add_simbol"
-                                                app:tint="@color/colorText" />
+                                                app:tint="?attr/colorOnSurface" />
                                         </androidx.cardview.widget.CardView>
                                     </LinearLayout>
 
@@ -1183,7 +1181,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="6dp"
-                            app:cardBackgroundColor="@color/backgroud"
+                            app:cardBackgroundColor="?attr/android:windowBackground"
                             app:cardCornerRadius="12dp">
 
                             <LinearLayout
@@ -1198,7 +1196,7 @@
                                     android:alpha="0.7"
                                     android:gravity="center"
                                     android:text="@string/title_spellcasting_ability"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="10sp" />
 
                                 <EditText
@@ -1212,7 +1210,7 @@
                                     android:minHeight="0dp"
                                     android:padding="0dp"
                                     android:text="@string/title_charisma"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1230,7 +1228,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="6dp"
-                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardBackgroundColor="?attr/android:windowBackground"
                                 app:cardCornerRadius="10dp">
 
                                 <LinearLayout
@@ -1249,7 +1247,7 @@
                                         android:layout_weight="1"
                                         android:alpha="0.7"
                                         android:text="@string/title_spell_modifier"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="11sp" />
 
                                     <EditText
@@ -1263,7 +1261,7 @@
                                         android:minWidth="36dp"
                                         android:minHeight="0dp"
                                         android:padding="0dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="18sp"
                                         android:textStyle="bold"
                                         tools:text="-1" />
@@ -1275,7 +1273,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="6dp"
-                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardBackgroundColor="?attr/android:windowBackground"
                                 app:cardCornerRadius="10dp">
 
                                 <LinearLayout
@@ -1294,7 +1292,7 @@
                                         android:layout_weight="1"
                                         android:alpha="0.7"
                                         android:text="@string/title_spell_save_dc"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="11sp" />
 
                                     <EditText
@@ -1308,7 +1306,7 @@
                                         android:minWidth="36dp"
                                         android:minHeight="0dp"
                                         android:padding="0dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="18sp"
                                         android:textStyle="bold"
                                         tools:text="9" />
@@ -1319,7 +1317,7 @@
                                 android:id="@+id/CardSpellAttackBonus"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                app:cardBackgroundColor="@color/backgroud"
+                                app:cardBackgroundColor="?attr/android:windowBackground"
                                 app:cardCornerRadius="10dp">
 
                                 <LinearLayout
@@ -1338,7 +1336,7 @@
                                         android:layout_weight="1"
                                         android:alpha="0.7"
                                         android:text="@string/title_spell_attack_bonus"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="11sp" />
 
                                     <EditText
@@ -1352,7 +1350,7 @@
                                         android:minWidth="36dp"
                                         android:minHeight="0dp"
                                         android:padding="0dp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:textSize="18sp"
                                         android:textStyle="bold"
                                         tools:text="+1" />
@@ -1369,4 +1367,4 @@
         </androidx.cardview.widget.CardView>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -4,7 +4,7 @@
     android:id="@+id/scroll_settings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fons_fosc"
+    android:background="?attr/android:windowBackground"
     android:fillViewport="true">
 
     <LinearLayout
@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/text_principal_fosc"
+                    android:textColor="?attr/colorOnSurface"
                     android:layout_marginBottom="8dp"
                     android:text="@string/pref" />
 
@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="@color/text_principal_fosc"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="10dp"
                         android:text="@string/propietat_1" />
                 </LinearLayout>
@@ -84,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="@color/text_principal_fosc"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="10dp"
                         android:text="@string/propietat_2" />
                 </LinearLayout>
@@ -110,7 +110,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="@color/text_principal_fosc"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="10dp"
                         android:text="@string/propietat_3" />
                 </LinearLayout>
@@ -136,7 +136,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="@color/text_principal_fosc"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="10dp"
                         android:text="@string/propietat_4" />
                 </LinearLayout>
@@ -162,7 +162,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="@color/text_principal_fosc"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="10dp"
                         android:text="@string/propietat_5" />
                 </LinearLayout>
@@ -188,7 +188,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="@color/text_principal_fosc"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="10dp"
                         android:text="@string/propietat_6" />
                 </LinearLayout>
@@ -207,7 +207,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/text_principal_fosc"
+                    android:textColor="?attr/colorOnSurface"
                     android:layout_marginBottom="8dp"
                     android:text="@string/accesi" />
 
@@ -235,7 +235,7 @@
                             android:insetBottom="0dp"
                             android:insetLeft="0dp"
                             android:insetRight="0dp"
-                            app:backgroundTint="@color/superficie_elevada_fosca"
+                            app:backgroundTint="?attr/colorSurface"
                             app:icon="@drawable/talkback"
                             app:iconGravity="textStart"
                             app:iconPadding="0dp"
@@ -248,7 +248,7 @@
                             android:textSize="13sp"
                             android:textStyle="bold"
                             android:gravity="center"
-                            android:textColor="@color/text_secundari_fosc"
+                            android:textColor="?attr/colorOnSurfaceVariant"
                             android:text="@string/talkback" />
                     </LinearLayout>
 
@@ -269,7 +269,7 @@
                             android:insetBottom="0dp"
                             android:insetLeft="0dp"
                             android:insetRight="0dp"
-                            app:backgroundTint="@color/superficie_elevada_fosca"
+                            app:backgroundTint="?attr/colorSurface"
                             app:icon="@drawable/contrast"
                             app:iconGravity="textStart"
                             app:iconPadding="0dp"
@@ -282,7 +282,7 @@
                             android:textSize="13sp"
                             android:textStyle="bold"
                             android:gravity="center"
-                            android:textColor="@color/text_secundari_fosc"
+                            android:textColor="?attr/colorOnSurfaceVariant"
                             android:text="@string/contrast" />
                     </LinearLayout>
                 </LinearLayout>
@@ -308,7 +308,7 @@
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
-                app:backgroundTint="@color/superficie_elevada_fosca"
+                app:backgroundTint="?attr/colorSurface"
                 app:icon="@drawable/login"
                 app:iconGravity="textStart"
                 app:iconPadding="0dp"
@@ -321,7 +321,7 @@
                 android:textSize="13sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:textColor="@color/text_secundari_fosc"
+                android:textColor="?attr/colorOnSurfaceVariant"
                 android:text="@string/log" />
         </LinearLayout>
 

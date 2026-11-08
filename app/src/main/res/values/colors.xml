@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
     <color name="fons_clar">#F4EAD5</color>
     <color name="superficie_clar">#FBF5E6</color>
     <color name="text_principal_clar">#2B1D14</color>
@@ -40,13 +37,4 @@
     <color name="error_dany_alt_contrast">#FF8080</color>
     <color name="vora_alt_contrast">#FFFFFF</color>
     <color name="foc_outline_alt_contrast">#00E5FF</color>
-
-    <color name="backgroud">#14100E</color>
-    <color name="background">#14100E</color>
-    <color name="cardBackground">#2D2420</color>
-    <color name="colorText">#FFFFFF</color>
-    <color name="textSecundari">#E0E0E0</color>
-    <color name="buttonColor">#E4575B</color>
-    <color name="buttonSelectedColoR">#E3B04B</color>
-    <color name="vora">#4A3C34</color>
 </resources>
