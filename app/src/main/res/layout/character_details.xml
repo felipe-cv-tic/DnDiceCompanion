@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ColumnaDreta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_fons"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="center"
+                android:labelFor="@+id/HealthCurrentCharacter"
+                android:minLines="2"
+                android:text="@string/title_current_hp"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/HealthCurrentCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_fons"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="center"
+                android:labelFor="@+id/ArmorClassCharacter"
+                android:minLines="2"
+                android:text="@string/title_armor_class"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/ArmorClassCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_fons"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="center"
+                android:labelFor="@+id/SpeedCharacter"
+                android:maxLines="1"
+                android:text="@string/title_speed"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/SpeedCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="9 m" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card_fons"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/title_initiative"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/InitiativeCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="+2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CardInventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/InventoryHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_inventory"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/InventoryArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                tools:text="▼" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/InventoryListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/InventoryItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/inv_explorer_pack"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.15"
+                android:background="?attr/colorOnSurface" />
+
+            <EditText
+                android:id="@+id/InventoryItem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/inv_healing_potion"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.15"
+                android:background="?attr/colorOnSurface" />
+
+            <EditText
+                android:id="@+id/InventoryItem3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/inv_rations"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.15"
+                android:background="?attr/colorOnSurface" />
+
+            <LinearLayout
+                android:id="@+id/RowAddInventoryItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/NewInventoryItemInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@null"
+                    android:hint="@string/hint_add_item"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:minHeight="0dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/BtnAddInventoryItem"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_boto_rodo"
+                    android:clickable="true"
+                    android:contentDescription="@string/hint_add_item"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="4dp"
+                    android:src="@drawable/add_simbol"
+                    app:tint="?attr/colorOnSurface" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CardSpellcastingAbility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:labelFor="@+id/SpellcastingAbilityCharacter"
+            android:text="@string/title_spellcasting_ability"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/SpellcastingAbilityCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="@string/title_charisma"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CardSpellModifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:labelFor="@+id/SpellModifierCharacter"
+            android:text="@string/title_spell_modifier"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/SpellModifierCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="end"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minWidth="36dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="-1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CardSpellSaveDc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:labelFor="@+id/SpellSaveDcCharacter"
+            android:text="@string/title_spell_save_dc"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/SpellSaveDcCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="end"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minWidth="36dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CardSpellAttackBonus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:labelFor="@+id/SpellAttackBonusCharacter"
+            android:text="@string/title_spell_attack_bonus"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/SpellAttackBonusCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="end"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minWidth="36dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="+1" />
+    </LinearLayout>
+
+</LinearLayout>

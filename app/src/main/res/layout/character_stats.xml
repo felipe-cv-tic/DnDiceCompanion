@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StatsColumn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/StrengthScoreCharacter"
+            android:maxLines="1"
+            android:text="@string/title_strength"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/StrengthScoreCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.7"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            tools:text="15" />
+
+        <TextView
+            android:id="@+id/StrengthModifierCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_modificador"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:padding="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="+2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/DexterityScoreCharacter"
+            android:maxLines="1"
+            android:text="@string/title_dexterity"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/DexterityScoreCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.7"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            tools:text="14" />
+
+        <TextView
+            android:id="@+id/DexterityModifierCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_modificador"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:padding="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="+2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/ConstitutionScoreCharacter"
+            android:maxLines="1"
+            android:text="@string/title_constitution"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ConstitutionScoreCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.7"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            tools:text="13" />
+
+        <TextView
+            android:id="@+id/ConstitutionModifierCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_modificador"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:padding="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="+1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/IntelligenceScoreCharacter"
+            android:maxLines="1"
+            android:text="@string/title_intelligence"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/IntelligenceScoreCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.7"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/IntelligenceModifierCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_modificador"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:padding="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="+0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/WisdomScoreCharacter"
+            android:maxLines="1"
+            android:text="@string/title_wisdom"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/WisdomScoreCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.7"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            tools:text="12" />
+
+        <TextView
+            android:id="@+id/WisdomModifierCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_modificador"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:padding="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="+1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/CharismaScoreCharacter"
+            android:maxLines="1"
+            android:text="@string/title_charisma"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/CharismaScoreCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.7"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/CharismaModifierCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_modificador"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:padding="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="-1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CardProficiencies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg_card_fons"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ProficienciesHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_proficiencies"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ProficienciesArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp"
+                tools:text="▼" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ProficienciesListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ProficiencyItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/prof_light_medium_armor"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.15"
+                android:background="?attr/colorOnSurface" />
+
+            <EditText
+                android:id="@+id/ProficiencyItem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/prof_martial_simple_weapons"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.15"
+                android:background="?attr/colorOnSurface" />
+
+            <EditText
+                android:id="@+id/ProficiencyItem3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/prof_thieves_tools"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.15"
+                android:background="?attr/colorOnSurface" />
+
+            <LinearLayout
+                android:id="@+id/RowAddProficiencyItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/NewProficiencyItemInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@null"
+                    android:hint="@string/hint_add_proficiency"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:minHeight="0dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/BtnAddProficiencyItem"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_boto_rodo"
+                    android:clickable="true"
+                    android:contentDescription="@string/hint_add_proficiency"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="4dp"
+                    android:src="@drawable/add_simbol"
+                    app:tint="?attr/colorOnSurface" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

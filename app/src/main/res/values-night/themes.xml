@@ -1,4 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Base.Theme.DnDiceCompanion" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primari_roig_brasa_fosc</item>
+        <item name="colorSecondary">@color/secundari_or_fosc</item>
+        <item name="colorTertiary">@color/accent_arca_fosc</item>
+        <item name="android:windowBackground">@color/fons_fosc</item>
+        <item name="colorSurface">@color/superficie_fosca</item>
+        <item name="colorOnSurface">@color/text_principal_fosc</item>
+        <item name="colorOnSurfaceVariant">@color/text_secundari_fosc</item>
+        <item name="colorOutline">@color/vora_fosca</item>
     </style>
 </resources>

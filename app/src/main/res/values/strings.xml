@@ -22,6 +22,7 @@
     <string name="title_spell_modifier">Modificador de llançament</string>
     <string name="title_spell_save_dc">CD salvació de conjur</string>
     <string name="title_spell_attack_bonus">Bonus atac de conjur</string>
+    <string name="dice_result">Resultat (d%1$d): %2$d</string>
 
     <string-array name="classes_array">
         <item>Guerrer</item>
@@ -144,4 +145,18 @@
     <string name="char_messi">Lionel Messi</string>
     <string name="class_mago_evocacion">Mag (Evocació)</string>
     <string name="class_picaro_ladron">Pícar (Lladre)</string>
+
+    <string name="char_xavi">Xavi Hernández</string>
+    <string name="char_puyol">Carles Puyol</string>
+    <string name="class_clergue_vida">Clèric (Domini de la Vida)</string>
+    <string name="class_guerrer_campio">Guerrer (Campió)</string>
+    <string name="class_guerrer">Guerrer</string>
+    <string name="nou_personatge">Nou Personatge %1$d</string>
+    <string name="delete_character_desc">Eliminar personatge</string>
+    <string name="toast_personatge">Personatge: %1$s</string>
+    <string name="toast_afegit">Afegit: %1$s</string>
+    <string name="toast_eliminat">Eliminat: %1$s</string>
+    <string name="toast_modificat">Modificat: %1$s</string>
+    <string name="dialeg_modificar_titol">Modificar nom</string>
+    <string name="dialeg_modificar_hint">Nou nom</string>
 </resources>
