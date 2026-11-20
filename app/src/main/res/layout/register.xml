@@ -4,7 +4,7 @@
     android:id="@+id/scroll_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroud"
+    android:background="?attr/android:windowBackground"
     android:fillViewport="true">
 
     <LinearLayout
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/colorText"
+            android:textColor="?attr/colorOnSurface"
             android:layout_marginBottom="4dp"
             android:labelFor="@+id/et_usuari"
             android:text="@string/user" />
@@ -32,15 +32,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:hint="@string/user"
-            android:textColorHint="@color/textSecundari"
-            app:hintTextColor="@color/colorText">
+            android:textColorHint="?attr/colorOnSurfaceVariant"
+            app:hintTextColor="?attr/colorOnSurface">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_usuari"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/colorText"
+            android:textColor="?attr/colorOnSurface"
             android:layout_marginBottom="4dp"
             android:labelFor="@+id/et_email"
             android:text="@string/email" />
@@ -62,15 +62,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:hint="@string/email"
-            android:textColorHint="@color/textSecundari"
-            app:hintTextColor="@color/colorText">
+            android:textColorHint="?attr/colorOnSurfaceVariant"
+            app:hintTextColor="?attr/colorOnSurface">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/colorText"
+            android:textColor="?attr/colorOnSurface"
             android:layout_marginBottom="4dp"
             android:labelFor="@+id/et_telefon"
             android:text="@string/phone" />
@@ -92,15 +92,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:hint="@string/phone"
-            android:textColorHint="@color/textSecundari"
-            app:hintTextColor="@color/colorText">
+            android:textColorHint="?attr/colorOnSurfaceVariant"
+            app:hintTextColor="?attr/colorOnSurface">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_telefon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/colorText"
+            android:textColor="?attr/colorOnSurface"
             android:layout_marginBottom="4dp"
             android:labelFor="@+id/et_contrasenya"
             android:text="@string/pwd" />
@@ -122,17 +122,17 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:hint="@string/pwd"
-            android:textColorHint="@color/textSecundari"
-            app:hintTextColor="@color/colorText"
+            android:textColorHint="?attr/colorOnSurfaceVariant"
+            app:hintTextColor="?attr/colorOnSurface"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/colorText">
+            app:passwordToggleTint="?attr/colorOnSurface">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_contrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -143,7 +143,7 @@
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/colorText"
+            android:textColor="?attr/colorOnSurface"
             android:layout_marginBottom="4dp"
             android:labelFor="@+id/et_confirmar_contrasenya"
             android:text="@string/confirm_pwd" />
@@ -154,17 +154,17 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:hint="@string/confirm_pwd"
-            android:textColorHint="@color/textSecundari"
-            app:hintTextColor="@color/colorText"
+            android:textColorHint="?attr/colorOnSurfaceVariant"
+            app:hintTextColor="?attr/colorOnSurface"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/colorText">
+            app:passwordToggleTint="?attr/colorOnSurface">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_confirmar_contrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -185,9 +185,9 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:text="@string/log"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:contentDescription="@string/btn_login_desc"
-                app:backgroundTint="@color/buttonColor"
+                app:backgroundTint="?attr/colorPrimary"
                 app:cornerRadius="20dp"
                 style="?android:attr/buttonBarButtonStyle"/>
 
@@ -198,9 +198,9 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:text="@string/reg"
-                android:textColor="@color/colorText"
+                android:textColor="?attr/colorOnSurface"
                 android:contentDescription="@string/btn_register_desc"
-                app:backgroundTint="@color/buttonColor"
+                app:backgroundTint="?attr/colorPrimary"
                 app:cornerRadius="20dp"
                 style="?android:attr/buttonBarButtonStyle"/>
         </LinearLayout>
@@ -212,7 +212,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             android:text="@string/noLogIn"
-            android:textColor="@color/textSecundari"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:contentDescription="@string/btn_no_login_desc"
             android:clickable="true"
             android:focusable="true"
@@ -239,7 +239,7 @@
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
-                app:backgroundTint="@color/cardBackground"
+                app:backgroundTint="?attr/colorSurface"
                 app:icon="@drawable/settings"
                 app:iconGravity="textStart"
                 app:iconPadding="0dp"
@@ -252,7 +252,7 @@
                 android:textSize="13sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:textColor="@color/textSecundari"
+                android:textColor="?attr/colorOnSurfaceVariant"
                 android:text="@string/pref" />
         </LinearLayout>
 

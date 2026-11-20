@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/backgroud">
+    android:background="?attr/android:windowBackground">
 
     <TextView
         android:id="@+id/TitleMagies"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="@string/title_magies_habilitats"
-        android:textColor="@color/colorText"
+        android:textColor="?attr/colorOnSurface"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center" />
@@ -44,7 +44,7 @@
                     android:layout_marginEnd="15dp"
                     android:layout_marginTop="15dp"
                     app:cardCornerRadius="16dp"
-                    app:cardBackgroundColor="@color/cardBackground">
+                    app:cardBackgroundColor="?attr/colorSurface">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -66,7 +66,6 @@
                                 android:layout_marginEnd="12dp"
                                 android:scaleType="centerCrop"
                                 android:contentDescription="@string/magic_image_desc"
-                                tools:background="#33FFFFFF"
                                 tools:src="@android:drawable/ic_menu_gallery" />
 
                             <LinearLayout
@@ -83,15 +82,15 @@
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
                                     android:hint="@string/hint_nom"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_nom_magia_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:inputType="textCapWords"
                                         tools:text="Bola de Foc" />
 
@@ -103,15 +102,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_estadistiques"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_stats_magia_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:inputType="text"
                                         tools:text="8d6 dany" />
 
@@ -126,7 +125,7 @@
                                 android:layout_marginStart="8dp"
                                 android:contentDescription="@string/expand_desc"
                                 android:src="@android:drawable/arrow_up_float"
-                                app:tint="@color/colorText" />
+                                app:tint="?attr/colorOnSurface" />
 
                         </LinearLayout>
 
@@ -154,15 +153,15 @@
                                     android:layout_marginEnd="8dp"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_nivell_escola"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_nivell_magia_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         tools:text="Nivell 3 (Evocació)" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -173,15 +172,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_temps_llancament"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_temps_magia_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         tools:text="1 acció" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -202,15 +201,15 @@
                                     android:layout_marginEnd="8dp"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_abast"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_abast_magia_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         tools:text="15 metres" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -221,15 +220,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_durada"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_durada_magia_1"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         tools:text="Instantània" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -242,15 +241,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
                                 android:hint="@string/hint_components"
-                                android:textColorHint="@color/textSecundari"
-                                app:hintTextColor="@color/colorText">
+                                android:textColorHint="?attr/colorOnSurfaceVariant"
+                                app:hintTextColor="?attr/colorOnSurface">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_components_magia_1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textSize="14sp"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     tools:text="V, S, M (un polsim de sofre i carbó)" />
 
                             </com.google.android.material.textfield.TextInputLayout>
@@ -260,8 +259,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="@string/hint_descripcio"
-                                android:textColorHint="@color/textSecundari"
-                                app:hintTextColor="@color/colorText">
+                                android:textColorHint="?attr/colorOnSurfaceVariant"
+                                app:hintTextColor="?attr/colorOnSurface">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_desc_magia_1"
@@ -270,7 +269,7 @@
                                     android:inputType="textMultiLine"
                                     android:minLines="2"
                                     android:textSize="14sp"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     tools:text="Una esfera de foc que explota en un punt a la teva elecció causant dany d'àrea a tots els enemics." />
 
                             </com.google.android.material.textfield.TextInputLayout>
@@ -288,7 +287,7 @@
                     android:layout_marginEnd="15dp"
                     android:layout_marginTop="15dp"
                     app:cardCornerRadius="16dp"
-                    app:cardBackgroundColor="@color/cardBackground">
+                    app:cardBackgroundColor="?attr/colorSurface">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -310,7 +309,6 @@
                                 android:layout_marginEnd="12dp"
                                 android:scaleType="centerCrop"
                                 android:contentDescription="@string/magic_image_desc"
-                                tools:background="#33FFFFFF"
                                 tools:src="@android:drawable/ic_menu_gallery" />
 
                             <LinearLayout
@@ -327,15 +325,15 @@
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
                                     android:hint="@string/hint_nom"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_nom_magia_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:inputType="textCapWords"
                                         tools:text="Raig de Gel" />
 
@@ -347,15 +345,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_estadistiques"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_stats_magia_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText"
+                                        android:textColor="?attr/colorOnSurface"
                                         android:inputType="text"
                                         tools:text="1d8 dany" />
 
@@ -370,7 +368,7 @@
                                 android:layout_marginStart="8dp"
                                 android:contentDescription="@string/expand_desc"
                                 android:src="@android:drawable/arrow_down_float"
-                                app:tint="@color/colorText" />
+                                app:tint="?attr/colorOnSurface" />
 
                         </LinearLayout>
 
@@ -398,15 +396,15 @@
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
                                     android:hint="@string/hint_nivell_escola"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_nivell_magia_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText" />
+                                        android:textColor="?attr/colorOnSurface" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -416,15 +414,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_temps_llancament"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_temps_magia_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText" />
+                                        android:textColor="?attr/colorOnSurface" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -444,15 +442,15 @@
                                     android:layout_weight="1"
                                     android:layout_marginEnd="8dp"
                                     android:hint="@string/hint_abast"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_abast_magia_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText" />
+                                        android:textColor="?attr/colorOnSurface" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -462,15 +460,15 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:hint="@string/hint_durada"
-                                    android:textColorHint="@color/textSecundari"
-                                    app:hintTextColor="@color/colorText">
+                                    android:textColorHint="?attr/colorOnSurfaceVariant"
+                                    app:hintTextColor="?attr/colorOnSurface">
 
                                     <com.google.android.material.textfield.TextInputEditText
                                         android:id="@+id/et_durada_magia_2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:textSize="14sp"
-                                        android:textColor="@color/colorText" />
+                                        android:textColor="?attr/colorOnSurface" />
 
                                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -482,15 +480,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="8dp"
                                 android:hint="@string/hint_components"
-                                android:textColorHint="@color/textSecundari"
-                                app:hintTextColor="@color/colorText">
+                                android:textColorHint="?attr/colorOnSurfaceVariant"
+                                app:hintTextColor="?attr/colorOnSurface">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_components_magia_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textSize="14sp"
-                                    android:textColor="@color/colorText" />
+                                    android:textColor="?attr/colorOnSurface" />
 
                             </com.google.android.material.textfield.TextInputLayout>
 
@@ -499,15 +497,15 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="@string/hint_descripcio"
-                                android:textColorHint="@color/textSecundari"
-                                app:hintTextColor="@color/colorText">
+                                android:textColorHint="?attr/colorOnSurfaceVariant"
+                                app:hintTextColor="?attr/colorOnSurface">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:id="@+id/et_desc_magia_2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textSize="14sp"
-                                    android:textColor="@color/colorText"
+                                    android:textColor="?attr/colorOnSurface"
                                     android:inputType="textMultiLine"
                                     android:minLines="2" />
 
@@ -529,7 +527,7 @@
             android:layout_margin="20dp"
             android:contentDescription="@string/add_magic_desc"
             app:srcCompat="@android:drawable/ic_input_add"
-            android:backgroundTint="@color/buttonColor" />
+            android:backgroundTint="?attr/colorPrimary" />
 
     </FrameLayout>
 
@@ -542,17 +540,17 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="12dp"
         android:hint="@string/search_hint_magies"
-        android:textColorHint="@color/textSecundari"
-        app:hintTextColor="@color/colorText"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        app:hintTextColor="?attr/colorOnSurface"
         app:startIconDrawable="@android:drawable/ic_menu_search"
-        app:startIconTint="@color/colorText">
+        app:startIconTint="?attr/colorOnSurface">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_search_magies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:textColor="@color/colorText"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
