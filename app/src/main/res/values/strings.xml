@@ -70,13 +70,13 @@
     <string name="user">USUARI</string>
     <string name="pwd">CONTRASENYA</string>
     <string name="noLogIn">Continuar sense iniciar sessió</string>
-    <string name="log">LOG IN</string>
-    <string name="reg">REGISTER</string>
-    <string name="pref">Preferencies</string>
+    <string name="log">INICIAR SESSIÓ</string>
+    <string name="reg">REGISTRAR-SE</string>
+    <string name="pref">Preferències</string>
     <string name="accesi">Accessibilitat</string>
-    <string name="talkback">Talk back</string>
-    <string name="contrast">High contrast</string>
-    <string name="propietat_1">Propietat 1</string>
+    <string name="talkback">TalkBack</string>
+    <string name="contrast">Alt contrast</string>
+    <string name="mode_fosc">Mode fosc</string>
     <string name="propietat_2">Propietat 2</string>
     <string name="propietat_3">Propietat 3</string>
     <string name="propietat_4">Propietat 4</string>
@@ -94,8 +94,6 @@
     <string name="d20">d20</string>
 
     <string name="title_magies_habilitats">Màgies / Habilitats</string>
-    <string name="hint_nom">Nom</string>
-    <string name="hint_estadistiques">Estadístiques</string>
     <string name="add_magic_desc">Afegir màgia o habilitat</string>
     <string name="magic_image_desc">Imatge de la màgia o habilitat</string>
 
@@ -103,17 +101,6 @@
     <string name="add_arma_desc">Afegir arma, escut o armadura</string>
     <string name="arma_image_desc">Imatge de l\'arma, escut o armadura</string>
 
-    <string name="hint_nivell_escola">Nivell / Escola</string>
-    <string name="hint_temps_llancament">Temps de llançament</string>
-    <string name="hint_abast">Abast</string>
-    <string name="hint_durada">Durada</string>
-    <string name="hint_components">Components</string>
-    <string name="hint_descripcio">Descripció</string>
-    <string name="hint_tipus">Tipus</string>
-    <string name="hint_propietats">Propietats</string>
-    <string name="hint_mestratge">Mestratge</string>
-    <string name="hint_pes">Pes</string>
-    <string name="hint_preu">Preu</string>
     <string name="expand_desc">Desplegar més detalls</string>
 
     <string name="email">CORREU ELECTRÒNIC</string>
@@ -122,7 +109,6 @@
 
     <string name="search_hint_magies">Cercar màgia o habilitat&#8230;</string>
     <string name="search_hint_armes">Cercar arma, escut o armadura&#8230;</string>
-    <string name="search_icon_desc">Icona de cerca</string>
     <string name="btn_login_desc">Iniciar sessió</string>
     <string name="btn_register_desc">Registrar-se</string>
     <string name="btn_no_login_desc">Continuar sense iniciar sessió</string>
@@ -133,7 +119,7 @@
     <string name="prof_light_medium_armor">Armadures lleugeres i mitjanes</string>
     <string name="prof_martial_simple_weapons">Armes marcials i simples</string>
     <string name="prof_thieves_tools">Eines de lladre</string>
-    <string name="inv_explorer_pack">Mochila d\'explorador</string>
+    <string name="inv_explorer_pack">Motxilla d\'explorador</string>
     <string name="inv_healing_potion">Poció de curació</string>
     <string name="inv_rations">Racions (5 dies)</string>
     <string name="add_character_desc">Afegir personatge</string>
@@ -159,4 +145,53 @@
     <string name="toast_modificat">Modificat: %1$s</string>
     <string name="dialeg_modificar_titol">Modificar nom</string>
     <string name="dialeg_modificar_hint">Nou nom</string>
+
+    <string name="title_ajuda">Benvingut a DnDice Companion</string>
+    <string name="desc_ajuda">Aquesta aplicació és el teu acompanyant ideal per a partides de D&amp;D. Pots gestionar la fitxa del teu personatge, fer tirades de daus, consultar el llibre d\'encanteris i organitzar el teu equipament d\'armes i armadures.</string>
+    <string name="btn_comencar">Començar</string>
+    <string name="toast_afegida">Afegida: %1$s</string>
+    <string name="toast_eliminada">Eliminada: %1$s</string>
+    <string name="toast_modificada">Modificada: %1$s</string>
+    <string name="arma_espasa_nom">Espasa Llarga</string>
+    <string name="arma_espasa_stats">1d8 tall</string>
+    <string name="arma_espasa_tipus">Arma cos a cos marcial</string>
+    <string name="arma_espasa_desc">Espasa de doble tall d\'acer de gran qualitat.</string>
+    <string name="arma_escut_nom">Escut de Fusta</string>
+    <string name="arma_escut_stats">+2 CA</string>
+    <string name="arma_escut_tipus">Escut</string>
+    <string name="arma_escut_desc">Escut de fusta de roure reforçat amb ferro.</string>
+    <string name="arma_arc_nom">Arc Llarg</string>
+    <string name="arma_arc_stats">1d8 perforant</string>
+    <string name="arma_arc_tipus">Arma a distància marcial</string>
+    <string name="arma_arc_desc">Arc gran de fusta de teix amb abast elevat.</string>
+    <string name="nova_arma_nom">Nova Arma %1$d</string>
+    <string name="nova_arma_stats">1d6 dany</string>
+    <string name="nova_arma_tipus">Arma simple</string>
+    <string name="nova_arma_desc">Descripció de la nova arma</string>
+    <string name="delete_arma_desc">Eliminar arma, escut o armadura</string>
+    <string name="magia_bola_nom">Bola de Foc</string>
+    <string name="magia_bola_stats">8d6 dany</string>
+    <string name="magia_bola_nivell">Nivell 3 (Evocació)</string>
+    <string name="magia_bola_desc">Esfera de foc que explota en un punt causant dany d\'àrea.</string>
+    <string name="magia_gel_nom">Raig de Gel</string>
+    <string name="magia_gel_stats">1d8 dany</string>
+    <string name="magia_gel_nivell">Truc (Evocació)</string>
+    <string name="magia_gel_desc">Llança un raig fred que redueix la velocitat de l\'objectiu.</string>
+    <string name="magia_curacio_nom">Curació de Ferides</string>
+    <string name="magia_curacio_stats">1d8 + Mod</string>
+    <string name="magia_curacio_nivell">Nivell 1 (Abjuració)</string>
+    <string name="magia_curacio_desc">Recupera punts de vida d\'una criatura que toquis.</string>
+    <string name="nova_magia_nom">Nova Màgia %1$d</string>
+    <string name="nova_magia_stats">2d6 dany</string>
+    <string name="nova_magia_nivell">Nivell 1</string>
+    <string name="nova_magia_desc">Descripció de la nova màgia</string>
+    <string name="delete_magia_desc">Eliminar màgia o habilitat</string>
+
+    <string name="dialeg_modificar_arma">Modificar arma</string>
+    <string name="dialeg_modificar_magia">Modificar màgia</string>
+    <string name="camp_nom">Nom</string>
+    <string name="camp_estadistiques">Estadístiques</string>
+    <string name="camp_tipus">Tipus</string>
+    <string name="camp_nivell">Nivell</string>
+    <string name="camp_descripcio">Descripció</string>
 </resources>

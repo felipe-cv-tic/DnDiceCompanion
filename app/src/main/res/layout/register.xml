@@ -4,7 +4,6 @@
     android:id="@+id/scroll_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/android:windowBackground"
     android:fillViewport="true">
 
     <LinearLayout
@@ -39,6 +38,7 @@
                 android:id="@+id/et_usuari"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="username"
                 android:inputType="textPersonName"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
@@ -69,6 +69,7 @@
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="emailAddress"
                 android:inputType="textEmailAddress"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
@@ -99,6 +100,7 @@
                 android:id="@+id/et_telefon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="phoneNumber"
                 android:inputType="phone"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
@@ -131,6 +133,7 @@
                 android:id="@+id/et_contrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="newPassword"
                 android:inputType="textPassword"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
@@ -163,6 +166,7 @@
                 android:id="@+id/et_confirmar_contrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="newPassword"
                 android:inputType="textPassword"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
@@ -237,8 +241,6 @@
                 android:padding="10dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:insetLeft="0dp"
-                android:insetRight="0dp"
                 app:backgroundTint="?attr/colorSurface"
                 app:icon="@drawable/settings"
                 app:iconGravity="textStart"

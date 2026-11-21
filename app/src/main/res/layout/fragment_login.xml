@@ -4,7 +4,6 @@
     android:id="@+id/scroll_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/android:windowBackground"
     android:fillViewport="true">
 
     <LinearLayout
@@ -39,6 +38,8 @@
                 android:id="@+id/et_usuari"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="username"
+                android:inputType="textPersonName"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
 
@@ -70,6 +71,7 @@
                 android:id="@+id/et_contrasenya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="password"
                 android:inputType="textPassword"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="15sp" />
@@ -144,8 +146,6 @@
                 android:padding="10dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:insetLeft="0dp"
-                android:insetRight="0dp"
                 app:backgroundTint="?attr/colorSurface"
                 app:icon="@drawable/settings"
                 app:iconGravity="textStart"

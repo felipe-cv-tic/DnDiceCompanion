@@ -2,6 +2,8 @@ package com.dsa.dndicecompanion
 
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -17,6 +19,8 @@ import com.google.android.material.color.MaterialColors
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        ModeFosc.aplicar(this)
+        TemaAltContrast.aplicar(this)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.barra_navegacio)
@@ -31,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         val botoCharacter = findViewById<MaterialButton>(R.id.botoBarraActivitiesCharacter)
         val botoDice = findViewById<MaterialButton>(R.id.botoBarraActivitiesDice)
+        val botoSpellbook = findViewById<MaterialButton>(R.id.botoBarraActivitiesSpellbook)
+        val botoWeapon = findViewById<MaterialButton>(R.id.botoBarraActivitiesWeapon)
 
         if (savedInstanceState == null) {
             replaceFragment(CharacterListFragment())
@@ -39,6 +45,8 @@ class MainActivity : AppCompatActivity() {
         marcarBotoSeleccionat(
             when (supportFragmentManager.findFragmentById(R.id.contenedorFragments)) {
                 is DausFragment -> botoDice
+                is MagiesFragment -> botoSpellbook
+                is ArmesFragment -> botoWeapon
                 else -> botoCharacter
             }
         )
@@ -51,6 +59,37 @@ class MainActivity : AppCompatActivity() {
         botoDice.setOnClickListener {
             replaceFragment(DausFragment())
             marcarBotoSeleccionat(botoDice)
+        }
+
+        botoSpellbook.setOnClickListener {
+            replaceFragment(MagiesFragment())
+            marcarBotoSeleccionat(botoSpellbook)
+        }
+
+        botoWeapon.setOnClickListener {
+            replaceFragment(ArmesFragment())
+            marcarBotoSeleccionat(botoWeapon)
+        }
+    }
+
+    /** Carrega el menú de la toolbar. */
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_principal, menu)
+        return true
+    }
+
+    /** Obre la pantalla de l'opció del menú premuda. */
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_login -> {
+                obrirPantalla(LoginFragment())
+                true
+            }
+            R.id.menu_preferencies -> {
+                obrirPantalla(SettingsFragment())
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 
@@ -70,6 +109,11 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.contenedorFragments, fragment)
             .addToBackStack(null)
             .commit()
+    }
+
+    fun mostrarPersonatges() {
+        replaceFragment(CharacterListFragment())
+        marcarBotoSeleccionat(findViewById(R.id.botoBarraActivitiesCharacter))
     }
 
     /** Marca el botó seleccionat de la barra inferior. */
