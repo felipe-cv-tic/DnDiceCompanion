@@ -5,6 +5,7 @@
         <item name="colorSecondary">@color/secundari_or_fosc</item>
         <item name="colorTertiary">@color/accent_arca_fosc</item>
         <item name="android:windowBackground">@color/fons_fosc</item>
+        <item name="android:windowSplashScreenBackground">@color/fons_fosc</item>
         <item name="colorSurface">@color/superficie_fosca</item>
         <item name="colorOnSurface">@color/text_principal_fosc</item>
         <item name="colorOnSurfaceVariant">@color/text_secundari_fosc</item>

@@ -17,7 +17,7 @@ fun Fragment.dialegModificarNom(nomActual: String, onAcceptar: (String) -> Unit)
         .setView(input)
         .setPositiveButton(android.R.string.ok) { _, _ ->
             val nouNom = input.text.toString().trim()
-            if (nouNom.isNotEmpty()) onAcceptar(nouNom)
+            if (nouNom.isNotEmpty() && isAdded) onAcceptar(nouNom)
         }
         .setNegativeButton(android.R.string.cancel, null)
         .show()

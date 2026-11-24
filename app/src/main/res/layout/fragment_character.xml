@@ -175,6 +175,7 @@
                     android:layout_height="wrap_content"
                     android:alpha="0.7"
                     android:gravity="center"
+                    android:labelFor="@+id/ProficiencyBonusCharacter"
                     android:text="@string/title_proficiency_bonus"
                     android:textColor="?attr/colorOnSurface"
                     android:textSize="12sp" />

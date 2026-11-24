@@ -186,12 +186,4 @@
     <string name="nova_magia_nivell">Nivell 1</string>
     <string name="nova_magia_desc">Descripció de la nova màgia</string>
     <string name="delete_magia_desc">Eliminar màgia o habilitat</string>
-
-    <string name="dialeg_modificar_arma">Modificar arma</string>
-    <string name="dialeg_modificar_magia">Modificar màgia</string>
-    <string name="camp_nom">Nom</string>
-    <string name="camp_estadistiques">Estadístiques</string>
-    <string name="camp_tipus">Tipus</string>
-    <string name="camp_nivell">Nivell</string>
-    <string name="camp_descripcio">Descripció</string>
 </resources>

@@ -3,6 +3,7 @@ package com.dsa.dndicecompanion
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.button.MaterialButton
@@ -14,11 +15,22 @@ class DausFragment : Fragment(R.layout.fragment_daus) {
         super.onViewCreated(view, savedInstanceState)
 
         val tvResult = view.findViewById<TextView>(R.id.tv_dice_result)
+        val ivDice = view.findViewById<ImageView>(R.id.iv_dice_image)
 
         /** Tira un dau i mostra el resultat. */
         fun roll(sides: Int) {
             val res = Random.nextInt(1, sides + 1)
             tvResult.text = getString(R.string.dice_result, sides, res)
+            ivDice?.setImageResource(
+                when (sides) {
+                    4 -> R.drawable.dice4
+                    6 -> R.drawable.dice6
+                    8 -> R.drawable.dice8
+                    10 -> R.drawable.dice10
+                    12 -> R.drawable.dice12
+                    else -> R.drawable.dice20
+                }
+            )
             Log.d("DausFragment", "Tirada d$sides: $res")
         }
 

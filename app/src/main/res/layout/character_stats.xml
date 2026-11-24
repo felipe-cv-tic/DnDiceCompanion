@@ -317,40 +317,25 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        <LinearLayout
+        <TextView
             android:id="@+id/ProficienciesHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?attr/selectableItemBackground"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/title_proficiencies"
-                android:textColor="?attr/colorOnSurface"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/ProficienciesArrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:alpha="0.7"
-                android:textColor="?attr/colorOnSurface"
-                android:textSize="12sp"
-                tools:text="▼" />
-        </LinearLayout>
+            android:text="@string/title_proficiencies"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/ProficienciesListContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:divider="@drawable/separador_llista"
+            android:showDividers="middle"
             android:orientation="vertical">
 
             <EditText
@@ -367,12 +352,6 @@
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="12sp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:alpha="0.15"
-                android:background="?attr/colorOnSurface" />
-
             <EditText
                 android:id="@+id/ProficiencyItem2"
                 android:layout_width="match_parent"
@@ -387,12 +366,6 @@
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="12sp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:alpha="0.15"
-                android:background="?attr/colorOnSurface" />
-
             <EditText
                 android:id="@+id/ProficiencyItem3"
                 android:layout_width="match_parent"
@@ -406,12 +379,6 @@
                 android:text="@string/prof_thieves_tools"
                 android:textColor="?attr/colorOnSurface"
                 android:textSize="12sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:alpha="0.15"
-                android:background="?attr/colorOnSurface" />
 
             <LinearLayout
                 android:id="@+id/RowAddProficiencyItem"
