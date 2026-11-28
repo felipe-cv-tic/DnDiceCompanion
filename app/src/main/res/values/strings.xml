@@ -186,4 +186,11 @@
     <string name="nova_magia_nivell">Nivell 1</string>
     <string name="nova_magia_desc">Descripció de la nova màgia</string>
     <string name="delete_magia_desc">Eliminar màgia o habilitat</string>
+    <string name="error_camp_buit">Aquest camp és obligatori</string>
+    <string name="error_email">El correu ha de contenir una @</string>
+    <string name="error_telefon">El telèfon ha de tenir 9 dígits</string>
+    <string name="error_contrasenya">Mínim 8 caràcters, amb majúscules, minúscules i algun número o símbol</string>
+    <string name="error_contrasenyes">Les contrasenyes no coincideixen</string>
+    <string name="toast_benvingut">Benvingut, %1$s</string>
+    <string name="toast_compte_creat">Compte creat correctament</string>
 </resources>

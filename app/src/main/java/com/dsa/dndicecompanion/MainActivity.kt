@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val botoWeapon = findViewById<MaterialButton>(R.id.botoBarraActivitiesWeapon)
 
         if (savedInstanceState == null) {
-            replaceFragment(CharacterListFragment())
+            replaceFragment(LoginFragment())
         }
 
         marcarBotoSeleccionat(
